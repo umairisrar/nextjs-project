@@ -376,329 +376,331 @@ const Navbar = ({ title, setswitch }) => {
             </li>
           </ul>
         </Box>
-        <Box ref={mobileref}>
-          <Box
-            className={styles.icon}
-            onClick={() => {
-              if (mobileview) {
-                setmobileview(false);
-              } else {
-                setmobileview(true);
-              }
-            }}
-          >
-            <DensityMediumIcon />
-          </Box>
-          {mobileview && (
+        {mobileview && (
+          <Box ref={mobileref}>
             <Box
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                width: "100%",
-                position: "absolute",
-                top: "69px",
-                left: "0px",
+              className={styles.icon}
+              onClick={() => {
+                if (mobileview) {
+                  setmobileview(false);
+                } else {
+                  setmobileview(true);
+                }
               }}
             >
+              <DensityMediumIcon />
+            </Box>
+            {mobileview && (
               <Box
                 style={{
-                  background: "rgb(255 255 255 / 0%)",
-                  width: "95%",
-                  zIndex: "1000",
-                  borderRadius: "14px",
-                  border: "1px solid #1717155c",
-                  backdropFilter: "blur(89px)",
+                  display: "flex",
+                  justifyContent: "center",
+                  width: "100%",
+                  position: "absolute",
+                  top: "69px",
+                  left: "0px",
                 }}
               >
-                <ul
+                <Box
                   style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "15px",
-                    paddingLeft: "17px",
+                    background: "rgb(255 255 255 / 0%)",
+                    width: "95%",
+                    zIndex: "1000",
+                    borderRadius: "14px",
+                    border: "1px solid #1717155c",
+                    backdropFilter: "blur(89px)",
                   }}
                 >
-                  <li
-                    className={styles.mobilenavlist}
-                    style={{ color: title === "Home" ? "#0287E6" : "white" }}
-                    onClick={() => {
-                      router.push("/");
-                      setmobileview(false);
-                    }}
-                  >
-                    Home
-                  </li>
-                  <li
-                    className={styles.mobilenavlist}
+                  <ul
                     style={{
                       display: "flex",
                       flexDirection: "column",
-                      position: "relative",
-                      justifyContent: "flex-start",
-                      alignItems: "baseline",
+                      gap: "15px",
+                      paddingLeft: "17px",
                     }}
                   >
-                    <Box
-                      style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                    <li
+                      className={styles.mobilenavlist}
+                      style={{ color: title === "Home" ? "#0287E6" : "white" }}
                       onClick={() => {
-                        setcompany(!company);
-                        setwwd(false);
-                        setprojects(false);
+                        router.push("/");
+                        setmobileview(false);
                       }}
                     >
-                      <Typography style={{ color: title === "company" ? "#0287E6" : "white" }}>
-                        Company
-                      </Typography>{" "}
-                      <ExpandMoreIcon />
-                    </Box>
-                    {/* {company && ( */}
-                    <Box
-                      ref={companyref}
+                      Home
+                    </li>
+                    <li
+                      className={styles.mobilenavlist}
                       style={{
-                        opacity: company ? 1 : 0,
-
-                        background: "white",
-                        transition: "1s",
-                        height: "auto",
-                        width: "245px",
-                        position: "absolute",
-                        borderRadius: "12px",
-                        top: "36px",
-                        left: "-3px",
                         display: "flex",
                         flexDirection: "column",
+                        position: "relative",
+                        justifyContent: "flex-start",
                         alignItems: "baseline",
-                        zIndex: company ? 10000 : -1,
-                        border: "1px solid #00000047",
                       }}
                     >
                       <Box
-                        style={{
-                          background: "white",
-                          width: "20px",
-                          height: "20px",
-                          top: "-6px",
-                          left: "20px",
-                          position: "absolute",
-                          transform: "rotate(45deg)",
-                          border: "1px solid #00000047",
-                          zIndex: -1,
+                        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                        onClick={() => {
+                          setcompany(!company);
+                          setwwd(false);
+                          setprojects(false);
                         }}
-                      ></Box>
-                      {companyar.map((item) => (
-                        <Typography
-                          style={{
-                            color: "#000000e0",
-                            fontFamily: "sans-serif",
-                            padding: "8px 5px",
-                            backgroundColor: "white",
-                            zIndex: 3,
-                            marginLeft: "10px",
-                            fontSize: "14px",
-                            // zIndex: 3,
-                          }}
-                          onClick={() => {
-                            setmobileview(false);
-
-                            router.push(item.link);
-                          }}
-                        >
-                          {item.title}
-                        </Typography>
-                      ))}
-                    </Box>
-                    {/* )} */}
-                  </li>{" "}
-                  <li
-                    className={styles.mobilenavlist}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      position: "relative",
-                      justifyContent: "flex-start",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    {/* <p>What We Do</p> <ExpandMoreIcon /> */}
-                    <Box
-                      style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
-                      onClick={() => {
-                        setwwd(!wwd);
-                        setprojects(false);
-                        setcompany(false);
-                      }}
-                    >
-                      <Typography style={{ color: title === "wwd" ? "#0287E6" : "white" }}>
-                        What We Do
-                      </Typography>
-                      <ExpandMoreIcon />
-                    </Box>
-                    {/* {company && ( */}
-                    <Box
-                      ref={wwdref}
-                      style={{
-                        opacity: wwd ? 1 : 0,
-                        background: "white",
-                        transition: "1s",
-                        height: "auto",
-                        width: "245px",
-                        position: "absolute",
-                        borderRadius: "12px",
-                        top: "36px",
-                        left: "-3px",
-                        display: "flex",
-
-                        flexDirection: "column",
-                        alignItems: "baseline",
-                        zIndex: wwd ? 20 : -1,
-                        border: "1px solid #00000047",
-                      }}
-                    >
+                      >
+                        <Typography style={{ color: title === "company" ? "#0287E6" : "white" }}>
+                          Company
+                        </Typography>{" "}
+                        <ExpandMoreIcon />
+                      </Box>
+                      {/* {company && ( */}
                       <Box
+                        ref={companyref}
                         style={{
-                          background: "white",
-                          width: "20px",
-                          height: "20px",
-                          top: "-6px",
-                          left: "20px",
-                          position: "absolute",
-                          transform: "rotate(45deg)",
-                          border: "1px solid #00000047",
-                          zIndex: -1,
-                        }}
-                      ></Box>
-                      {wwdar.map((item) => (
-                        <Typography
-                          style={{
-                            color: "#000000e0",
-                            fontFamily: "sans-serif",
-                            padding: "8px 5px",
-                            backgroundColor: "white",
-                            zIndex: 3,
-                            marginLeft: "10px",
-                            fontSize: "14px",
-                          }}
-                          onClick={() => {
-                            setmobileview(false);
-                            router.push(`/whatwedo?title=${item.title}`);
+                          opacity: company ? 1 : 0,
 
-                            if (setswitch) {
-                              setswitch(item.title);
-                            }
-                            setwwd(false);
+                          background: "white",
+                          transition: "1s",
+                          height: "auto",
+                          width: "245px",
+                          position: "absolute",
+                          borderRadius: "12px",
+                          top: "36px",
+                          left: "-3px",
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "baseline",
+                          zIndex: company ? 10000 : -1,
+                          border: "1px solid #00000047",
+                        }}
+                      >
+                        <Box
+                          style={{
+                            background: "white",
+                            width: "20px",
+                            height: "20px",
+                            top: "-6px",
+                            left: "20px",
+                            position: "absolute",
+                            transform: "rotate(45deg)",
+                            border: "1px solid #00000047",
+                            zIndex: -1,
                           }}
-                        >
-                          {item.title}
-                        </Typography>
-                      ))}
-                    </Box>
-                  </li>
-                  <li
-                    className={styles.mobilenavlist}
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      position: "relative",
-                      justifyContent: "flex-start",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    {/* <p>Projects</p> <ExpandMoreIcon /> */}
-                    <Box
-                      style={{ display: "flex", flexDirection: "row" }}
-                      onClick={() => {
-                        setprojects(!projects);
-                        setcompany(false);
-                        setwwd(false);
-                      }}
-                    >
-                      <Typography style={{ color: title === "projects" ? "#0287E6" : "white" }}>
-                        Projects
-                      </Typography>
-                      <ExpandMoreIcon />
-                    </Box>
-                    {/* {company && ( */}
-                    <Box
-                      ref={projectsref}
+                        ></Box>
+                        {companyar.map((item) => (
+                          <Typography
+                            style={{
+                              color: "#000000e0",
+                              fontFamily: "sans-serif",
+                              padding: "8px 5px",
+                              backgroundColor: "white",
+                              zIndex: 3,
+                              marginLeft: "10px",
+                              fontSize: "14px",
+                              // zIndex: 3,
+                            }}
+                            onClick={() => {
+                              setmobileview(false);
+
+                              router.push(item.link);
+                            }}
+                          >
+                            {item.title}
+                          </Typography>
+                        ))}
+                      </Box>
+                      {/* )} */}
+                    </li>{" "}
+                    <li
+                      className={styles.mobilenavlist}
                       style={{
-                        opacity: projects ? 1 : 0,
-                        background: "white",
-                        transition: "1s",
-                        height: "auto",
-                        width: "245px",
-                        position: "absolute",
-                        borderRadius: "12px",
-                        top: "36px",
-                        left: "-3px",
                         display: "flex",
                         flexDirection: "column",
+                        position: "relative",
+                        justifyContent: "flex-start",
                         alignItems: "baseline",
-                        zIndex: projects ? 20 : -1,
-
-                        border: "1px solid #00000047",
                       }}
                     >
+                      {/* <p>What We Do</p> <ExpandMoreIcon /> */}
                       <Box
+                        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                        onClick={() => {
+                          setwwd(!wwd);
+                          setprojects(false);
+                          setcompany(false);
+                        }}
+                      >
+                        <Typography style={{ color: title === "wwd" ? "#0287E6" : "white" }}>
+                          What We Do
+                        </Typography>
+                        <ExpandMoreIcon />
+                      </Box>
+                      {/* {company && ( */}
+                      <Box
+                        ref={wwdref}
                         style={{
+                          opacity: wwd ? 1 : 0,
                           background: "white",
-                          width: "20px",
-                          height: "20px",
-                          top: "-6px",
-                          left: "20px",
+                          transition: "1s",
+                          height: "auto",
+                          width: "245px",
                           position: "absolute",
-                          transform: "rotate(45deg)",
-                          zIndex: -1,
+                          borderRadius: "12px",
+                          top: "36px",
+                          left: "-3px",
+                          display: "flex",
+
+                          flexDirection: "column",
+                          alignItems: "baseline",
+                          zIndex: wwd ? 20 : -1,
                           border: "1px solid #00000047",
                         }}
-                      ></Box>
-                      {projectsar.map((item) => (
-                        <Typography
+                      >
+                        <Box
                           style={{
-                            color: "#000000e0",
-                            fontFamily: "sans-serif",
-                            padding: "8px 5px",
-                            backgroundColor: "white",
-                            zIndex: 3,
-                            marginLeft: "10px",
-                            fontSize: "14px",
+                            background: "white",
+                            width: "20px",
+                            height: "20px",
+                            top: "-6px",
+                            left: "20px",
+                            position: "absolute",
+                            transform: "rotate(45deg)",
+                            border: "1px solid #00000047",
+                            zIndex: -1,
                           }}
-                          onClick={() => {
-                            setmobileview(false);
-                            router.push("/projects");
-                          }}
-                        >
-                          {item}
+                        ></Box>
+                        {wwdar.map((item) => (
+                          <Typography
+                            style={{
+                              color: "#000000e0",
+                              fontFamily: "sans-serif",
+                              padding: "8px 5px",
+                              backgroundColor: "white",
+                              zIndex: 3,
+                              marginLeft: "10px",
+                              fontSize: "14px",
+                            }}
+                            onClick={() => {
+                              setmobileview(false);
+                              router.push(`/whatwedo?title=${item.title}`);
+
+                              if (setswitch) {
+                                setswitch(item.title);
+                              }
+                              setwwd(false);
+                            }}
+                          >
+                            {item.title}
+                          </Typography>
+                        ))}
+                      </Box>
+                    </li>
+                    <li
+                      className={styles.mobilenavlist}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        position: "relative",
+                        justifyContent: "flex-start",
+                        alignItems: "baseline",
+                      }}
+                    >
+                      {/* <p>Projects</p> <ExpandMoreIcon /> */}
+                      <Box
+                        style={{ display: "flex", flexDirection: "row" }}
+                        onClick={() => {
+                          setprojects(!projects);
+                          setcompany(false);
+                          setwwd(false);
+                        }}
+                      >
+                        <Typography style={{ color: title === "projects" ? "#0287E6" : "white" }}>
+                          Projects
                         </Typography>
-                      ))}
-                    </Box>
-                  </li>{" "}
-                  <li className={styles.mobilenavlist}>News Room</li>
-                  <li
-                    className={styles.mobilenavlist}
-                    onClick={() => {
-                      setmobileview(false);
+                        <ExpandMoreIcon />
+                      </Box>
+                      {/* {company && ( */}
+                      <Box
+                        ref={projectsref}
+                        style={{
+                          opacity: projects ? 1 : 0,
+                          background: "white",
+                          transition: "1s",
+                          height: "auto",
+                          width: "245px",
+                          position: "absolute",
+                          borderRadius: "12px",
+                          top: "36px",
+                          left: "-3px",
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "baseline",
+                          zIndex: projects ? 20 : -1,
 
-                      setcareer(true);
-                    }}
-                  >
-                    Careers
-                  </li>{" "}
-                  <li
-                    onClick={() => {
-                      setmobileview(false);
+                          border: "1px solid #00000047",
+                        }}
+                      >
+                        <Box
+                          style={{
+                            background: "white",
+                            width: "20px",
+                            height: "20px",
+                            top: "-6px",
+                            left: "20px",
+                            position: "absolute",
+                            transform: "rotate(45deg)",
+                            zIndex: -1,
+                            border: "1px solid #00000047",
+                          }}
+                        ></Box>
+                        {projectsar.map((item) => (
+                          <Typography
+                            style={{
+                              color: "#000000e0",
+                              fontFamily: "sans-serif",
+                              padding: "8px 5px",
+                              backgroundColor: "white",
+                              zIndex: 3,
+                              marginLeft: "10px",
+                              fontSize: "14px",
+                            }}
+                            onClick={() => {
+                              setmobileview(false);
+                              router.push("/projects");
+                            }}
+                          >
+                            {item}
+                          </Typography>
+                        ))}
+                      </Box>
+                    </li>{" "}
+                    <li className={styles.mobilenavlist}>News Room</li>
+                    <li
+                      className={styles.mobilenavlist}
+                      onClick={() => {
+                        setmobileview(false);
 
-                      router.push("/contactus");
-                    }}
-                    className={styles.mobilenavlist}
-                    style={{ color: title === "contact" ? "#0287E6" : "white" }}
-                  >
-                    Contact us
-                  </li>
-                </ul>
+                        setcareer(true);
+                      }}
+                    >
+                      Careers
+                    </li>{" "}
+                    <li
+                      onClick={() => {
+                        setmobileview(false);
+
+                        router.push("/contactus");
+                      }}
+                      className={styles.mobilenavlist}
+                      style={{ color: title === "contact" ? "#0287E6" : "white" }}
+                    >
+                      Contact us
+                    </li>
+                  </ul>
+                </Box>
               </Box>
-            </Box>
-          )}
-        </Box>
+            )}
+          </Box>
+        )}
       </Box>
       {career && (
         <Box style={{}}>
