@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+  .steeltext0 {
+    width: 100% !important;
+    font-size: 15px !important;
+    text-align: justify !important;
+  }
+  .civiltext0 {
+    width: 100% !important;
+  }
+
+  .facilitytext0 {
+    font-size: 17px !important;
+  }
+  .facilitytext11 {
+    font-size: 16px !important;
+  }
+
+  .civiltext2 {
+    width: 100% !important;
+  }
+  .civilbox0 {
+    width: 100% !important;
+  }
+  .meptext0 {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 740px) {
+  .meptext2 {
+    width: 100% !important;
+  }
+  .steeltext2 {
+    width: 100% !important;
+    height: 30px !important;
+  }
+}
+
+.civilbox0 {
+  border: 1px solid #e4e4e4;
+  padding: 26px 0px;
+  text-align: center;
+  border-radius: 8px;
+  width: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

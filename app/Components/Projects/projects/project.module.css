@@ -1,0 +1,47 @@
+.projects0:hover {
+  background-color: #0287e6;
+  color: white !important;
+}
+
+@media (max-width: 900px) {
+  .projectbox0 {
+    padding: 8px 9px !important;
+  }
+
+  .projecttext0 {
+    font-size: 13px !important;
+  }
+
+  .projects0 {
+    padding: 0px 11px !important;
+    padding-top: 17px !important;
+    height: 78px !important;
+  }
+  .projectbox {
+    justify-content: flex-start !important;
+  }
+
+  .projecttext1 {
+    font-size: 15px !important;
+  }
+
+  .projecttext2 {
+    font-size: 15px !important;
+  }
+
+  .projecticon {
+    font-size: 13px !important;
+  }
+  .projectbox2 {
+    padding-top: 24px !important;
+  }
+  .projecttext3 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects0 {
+    width: 100% !important;
+  }
+}

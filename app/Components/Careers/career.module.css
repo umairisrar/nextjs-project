@@ -1,0 +1,80 @@
+.inputstyle {
+  color: rgb(102, 112, 133);
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  width: 308px;
+  height: 100%;
+  padding: 11px 13px;
+  background: rgb(242, 244, 247);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.labelstyle {
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+  .careerbox0 {
+    width: 95% !important;
+    height: 92vh !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .careertext6 {
+    font-size: 19px !important;
+  }
+  .careerbox1 {
+    flex-direction: column !important ;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+  .careerbox8 {
+    padding: 12px 10px !important;
+  }
+  .careerbox5 {
+    width: 78px !important;
+    gap: 4px !important;
+    padding: 4px !important;
+  }
+  .careerbox7 {
+    margin-bottom: 0px !important;
+    height: 71px !important;
+  }
+  .uploadresume {
+    font-size: 11px !important;
+  }
+  .inputstyle {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+  .careerbox2 {
+    padding-bottom: 0px !important;
+  }
+  .careerbox3 {
+    padding: 20px 10px !important;
+  }
+  .careerbox4 {
+    padding-bottom: 15px !important;
+    width: 92% !important;
+  }
+  .careerbox6 {
+    padding-bottom: 0px !important;
+    width: 100% !important;
+  }
+  .labelstyle {
+    font-size: 14px;
+  }
+  .submitbtn {
+    font-size: 16px !important;
+    padding: 4px 16px !important;
+  }
+}

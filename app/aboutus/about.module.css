@@ -1,0 +1,29 @@
+.navstyle {
+  padding: 10px 90px;
+}
+.boxstyle2 {
+  width: 219px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .navstyle {
+    padding: 10px 10px;
+  }
+  .boxstyle0 {
+    height: 230px !important;
+  }
+  .boxstyle2 {
+    width: 100%;
+    height: 100px;
+  }
+  .text0 {
+    font-size: 29px !important;
+  }
+  .abouttext0 {
+    text-align: justify !important;
+  }
+}

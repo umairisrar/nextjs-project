@@ -1,0 +1,52 @@
+.navlist {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobilenavlist {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: sans-serif;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  display: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media (max-width: 1216px) {
+  .navbox {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo0 {
+    width: 141px !important;
+    height: 44px !important;
+  }
+}

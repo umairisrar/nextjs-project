@@ -1,0 +1,27 @@
+.navstyle {
+  padding: 10px 90px;
+}
+
+.boxstyle01 {
+  padding: 60px 0px;
+}
+
+@media (max-width: 900px) {
+  .navstyle {
+    padding: 10px 10px;
+  }
+  .projecttext2 {
+    font-size: 14px !important;
+  }
+  .boxstyle0 {
+    height: 230px !important;
+  }
+
+  .text0 {
+    font-size: 24px !important;
+  }
+
+  .boxstyle01 {
+    padding-bottom: 15px !important;
+  }
+}

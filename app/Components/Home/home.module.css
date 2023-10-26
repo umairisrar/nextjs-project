@@ -1,0 +1,96 @@
+.icontab {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 360px;
+  margin-bottom: 4px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxstyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #0000008f;
+  padding: 18px 0px;
+}
+
+.dfwork {
+  width: 286px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
+
+.chooseus {
+  flex-direction: row;
+}
+
+.chooseus0 {
+  width: 50%;
+}
+.chooseus1 {
+  margin: 59px 132px 59px 40px;
+}
+
+.valuables {
+  padding: 60px 140px;
+}
+.section3text {
+  width: 347px;
+}
+
+@media (max-width: 900px) {
+  .section3text2 {
+    font-size: 30px !important;
+  }
+  .dfwork {
+    width: 100%;
+  }
+  .slidersectiontext {
+    font-size: 14px !important;
+    padding-bottom: 20px !important;
+    width: 100% !important;
+  }
+  .chooseus {
+    flex-direction: column;
+  }
+  .chooseus0 {
+    width: 100%;
+  }
+  .chooseus1 {
+    margin: 13px;
+  }
+  .valuables {
+    padding: 0px !important;
+  }
+  .section5valuablestext {
+    font-size: 24px !important;
+    margin-top: 27px !important;
+  }
+  .section3text {
+    width: 100%;
+  }
+  .section6text0 {
+    font-size: 23px !important;
+  }
+  .section6text1 {
+    font-size: 16px !important;
+  }
+  .section6input {
+    width: 100% !important;
+  }
+  .section6btn {
+    font-size: 10px !important;
+  }
+  .section5image {
+    width: 100px !important;
+  }
+  .section5box {
+    width: 71% !important;
+  }
+}
