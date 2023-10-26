@@ -96,7 +96,7 @@ const Navbar = ({ title, setswitch }) => {
     },
   ];
   return (
-    <Box style={{}}>
+    <Box style={{ zIndex: "20", position: "relative" }}>
       <Box
         style={{
           display: "flex",
