@@ -1,3 +1,4 @@
+"use client";
 import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import styles from "../home.module.css";

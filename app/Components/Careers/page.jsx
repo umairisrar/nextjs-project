@@ -1,3 +1,4 @@
+"use client";
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
