@@ -5,7 +5,7 @@ import styles from "../home.module.css";
 const Svgimage = () => {
   return (
     <Box
-      style={{ position: "absolute", top: "0px", right: "0px", opacity: 0.2 }}
+      style={{ position: "absolute", top: "-2px", right: "0px", opacity: 0.9, width: "878px" }}
       className={styles.svgimage}
     >
       <svg
