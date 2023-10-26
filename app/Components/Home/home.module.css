@@ -44,6 +44,10 @@
   width: 347px;
 }
 
+.svgimage {
+  display: flex;
+}
+
 @media (max-width: 900px) {
   .section3text2 {
     font-size: 30px !important;
@@ -92,5 +96,11 @@
   }
   .section5box {
     width: 71% !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .svgimage {
+    display: none;
   }
 }

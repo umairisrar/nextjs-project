@@ -11,6 +11,7 @@ import Homesection4 from "./Components/Home/Components/section4";
 import Homesection5 from "./Components/Home/Components/section5";
 import Homesection6 from "./Components/Home/Components/section6";
 import Footer from "./Components/Footer";
+import Svgimage from "./Components/Home/Components/svgimage";
 
 export default function Home() {
   const router = useRouter();
@@ -76,6 +77,7 @@ export default function Home() {
             </Typography>{" "}
           </Box>
         </Box>
+        <Svgimage />
       </Box>
 
       <Section2 />
