@@ -1,6 +1,6 @@
 "use client";
 import { Box, Container, Typography } from "@mui/material";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -8,6 +8,8 @@ import Image from "next/image";
 import styles from "../home.module.css";
 
 const Homesection5 = () => {
+  const [partnersData, setpartnersData] = useState([]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -43,17 +45,26 @@ const Homesection5 = () => {
     ],
   };
 
-  const options = [
-    "/assets/images/slider1.png",
-    "/assets/images/slider3.png",
-    "/assets/images/slider4.png",
-    "/assets/images/slider5.png",
-    "/assets/images/slider6.png",
-    {
-      img1: "/assets/images/slider2-1.png",
-      img2: "/assets/images/slider2-2.png",
-    },
-  ];
+  const getPartnerData = async () => {
+    try {
+      const response = await fetch("/api/partners/getrecords", {
+        method: "GET",
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setpartnersData(data);
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+    }
+  };
+
+  useEffect(() => {
+    getPartnerData();
+  }, []);
+
   return (
     <Box style={{}}>
       <Container>
@@ -103,7 +114,7 @@ const Homesection5 = () => {
         <div>
           <Slider {...settings}>
             {/* <Box> */}
-            {options.map((item) => (
+            {partnersData.map((item) => (
               <Box>
                 {item?.img1 ? (
                   <Box
@@ -150,7 +161,7 @@ const Homesection5 = () => {
                   >
                     <Image
                       className={styles.section5image}
-                      src={item}
+                      src={item.image}
                       alt="slider1"
                       width={100}
                       height={"100"}

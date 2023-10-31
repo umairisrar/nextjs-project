@@ -166,7 +166,14 @@ const Footer = () => {
               Contact Details
             </Typography>
             <Box
-              style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "6px" }}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                gap: "6px",
+                paddingTop: "2px",
+                paddingBottom: "10px",
+              }}
             >
               <Typography
                 style={{
