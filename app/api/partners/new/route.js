@@ -8,14 +8,14 @@ export const POST = async (request, res) => {
   const name = formData0.get("name");
   const image = formData0.get("image");
   const uniqueFilename = `${name}-${Date.now()}-${image.name}`;
-  const filePath = path.join(process.cwd(), "public", "images", uniqueFilename);
+  const filePath = path.join(process.cwd(), "public", "partners", uniqueFilename);
   fs.writeFileSync(filePath, Buffer.from(await image.arrayBuffer()));
 
   try {
     await connectToDB();
     const newPartner = new Partners({
       name: name,
-      image: `/images/${uniqueFilename}`,
+      image: `/partners/${uniqueFilename}`,
     });
     await newPartner.save();
     return new Response(JSON.stringify({ submit: "submitted" }), { status: 201 });

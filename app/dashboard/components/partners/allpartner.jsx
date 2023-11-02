@@ -45,7 +45,7 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
         <Box
           style={{
             background: "white",
-            padding: "24px 0px 24px 24px",
+            padding: "24px 24px 24px 24px",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "row",
@@ -60,7 +60,7 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
                 <Box
                   //   className={styles.section5box}
                   style={{
-                    width: "206px",
+                    width: "204px",
                     border: "1px solid #E4E4E4",
                     padding: "31px",
                     borderRadius: "12px",

@@ -8,7 +8,7 @@ export const POST = async (request) => {
   const name = formData.get("name");
 
   // Create a directory to store images (if not exists)
-  const imagesDirectory = path.join(process.cwd(), "public", "images");
+  const imagesDirectory = path.join(process.cwd(), "public", "gallery");
   await fs.mkdir(imagesDirectory, { recursive: true });
 
   const imageFiles = [];
@@ -20,7 +20,7 @@ export const POST = async (request) => {
 
       await fs.writeFile(filePath, Buffer.from(await file.arrayBuffer()));
 
-      imageFiles.push(`/images/${uniqueFilename}`);
+      imageFiles.push(`/gallery/${uniqueFilename}`);
     }
   }
 

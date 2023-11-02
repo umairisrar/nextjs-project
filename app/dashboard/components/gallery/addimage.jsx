@@ -40,14 +40,14 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
             const width = img.width;
             const height = img.height;
 
-            if (width <= 200 && height <= 200) {
-            } else {
-              handleClickVariant(
-                "error",
-                `Please choose a valid image as the dimensions of the ${image.filename} exceed 200x200 pixels`
-              );
-              return;
-            }
+            // if (width <= 200 && height <= 200) {
+            // } else {
+            //   handleClickVariant(
+            //     "error",
+            //     `Please choose a valid image as the dimensions of the ${image.filename} exceed 200x200 pixels`
+            //   );
+            //   return;
+            // }
           };
         };
       }

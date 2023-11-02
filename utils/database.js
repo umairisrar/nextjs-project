@@ -11,8 +11,8 @@ export const connectToDB = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      dbName: "albwardy",
+    await mongoose.connect('mongodb+srv://albawardy2020:albawardy123@albwardy.zz95r0r.mongodb.net/', {
+      dbName: "Albwardy",
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

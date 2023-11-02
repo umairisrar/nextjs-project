@@ -111,6 +111,7 @@ const Homesection3 = () => {
                 style={{
                   border: "1px solid rgba(228, 228, 228, 0.12)",
                   color: "white",
+                  
                 }}
               >
                 <Box style={{ display: "flex", justifyContent: "center" }}>
