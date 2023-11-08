@@ -151,7 +151,7 @@ const Homesection5 = () => {
                   <Box
                     className={styles.section5box}
                     style={{
-                      width: "206px",
+                      width: "180px",
                       border: "1px solid #E4E4E4",
                       padding: "31px",
                       borderRadius: "12px",

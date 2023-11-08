@@ -108,13 +108,15 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
                 <Box
                   //   className={styles.section5box}
                   style={{
-                    width: "206px",
+                    width: "230px",
                     border: "1px solid #E4E4E4",
-                    padding: "31px",
+                 display: 'flex',
+                 justifyContent: 'center',
+                 alignItems: 'center',
                     borderRadius: "12px",
-                    display: "flex",
-                    justifyContent: "center",
+                    
                     position: "relative",
+                    height: '131px'
                   }}
                 >
                   <Box
@@ -139,7 +141,7 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
                     alt="slider1"
                     width={100}
                     height={"100"}
-                    style={{ width: "134px", height: "40px" }}
+                    style={{ width: "134px", height:'auto' }}
                   />
                 </Box>
               )}

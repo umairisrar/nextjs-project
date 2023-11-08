@@ -5,13 +5,13 @@ import styles from "../home.module.css";
 const Svgimage = () => {
   return (
     <Box
-      style={{ position: "absolute", top: "-2px", right: "0px", opacity: 0.9, width: "878px" }}
+      style={{ position: "absolute", top: "-47px", right: "0px", opacity: 0.9, width: "878px" }}
       className={styles.svgimage}
     >
       <svg
-        height="1000"
+        height="900"
         version="1.1"
-        width="1000"
+        width="900"
         xmlns="http://www.w3.org/2000/svg"
         style={{
           overflow: "hidden",

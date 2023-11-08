@@ -130,7 +130,7 @@ const Careermap = ({ name, email, phoneno, _id, position, address, resume, delet
           title="Resume"
           src={resume}
           width="100%"
-          height="250"
+          height="300"
           style={{ border: "none" }}
         ></iframe>
       </Box>

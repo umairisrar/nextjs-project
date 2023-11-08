@@ -199,7 +199,7 @@ const Footer = () => {
               >
                 +971-4-3238008
               </Typography>
-              <CallMadeIcon style={{ fontSize: "14px" }} />
+              <CallMadeIcon style={{ fontSize: "14px" ,  position: 'relative', top: '-10px', right: '4px'}} />
             </Box>
             <Box style={{ display: "flex" }}>
               <Typography
@@ -213,7 +213,7 @@ const Footer = () => {
               >
                 Leave us a Message
               </Typography>
-              <CallMadeIcon style={{ fontSize: "14px" }} />
+              <CallMadeIcon style={{ fontSize: "14px", position: 'relative', top: '-10px',}} />
             </Box>
           </Box>
         </Grid>

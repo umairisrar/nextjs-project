@@ -76,7 +76,7 @@ const Sidenav = ({ setswitchvalue, switchvalue }) => {
             className={styles.sidetabs}
           >
             {item.icon}
-            <Typography style={{ fontFamily: "sans-serif" }}>{item.title}</Typography>
+            <Typography style={{ fontFamily: "sans-serif", fontSize: "16px" }}>{item.title}</Typography>
           </Box>
         ))}
       </Box>

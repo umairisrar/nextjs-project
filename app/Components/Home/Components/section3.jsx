@@ -38,7 +38,7 @@ const Homesection3 = () => {
             </Typography>
           </Box>
           <Box style={{ marginTop: "20px" }}>
-            <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+            <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", width: '102%' }}>
               <Box
                 className={styles.dfwork}
                 style={{
@@ -111,7 +111,7 @@ const Homesection3 = () => {
                 style={{
                   border: "1px solid rgba(228, 228, 228, 0.12)",
                   color: "white",
-                  
+                  width: '285px'
                 }}
               >
                 <Box style={{ display: "flex", justifyContent: "center" }}>

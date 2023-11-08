@@ -6,7 +6,7 @@ import styles from "../../../page.module.css";
 
 const Section2 = () => {
   return (
-    <Box>
+    <Box style = {{position: 'relative', zIndex: 1000}}>
       <Container>
         <Box
           style={{

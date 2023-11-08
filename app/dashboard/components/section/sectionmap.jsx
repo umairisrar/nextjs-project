@@ -23,7 +23,7 @@ const Sectionmap = ({ name, deleteProject, id, setsectionData }) => {
       style={{
         border: "1px solid #E4E4E4",
         borderRadius: "10px",
-        width: "240px",
+        width: "210px",
 
         padding: "0px 14px",
         paddingTop: "17px",
@@ -49,7 +49,7 @@ const Sectionmap = ({ name, deleteProject, id, setsectionData }) => {
           //   className={styles.projecttext2}
           style={{
             color: color2,
-            fontSize: 17,
+            fontSize: 15,
             fontFamily: "sans-serif",
             fontWeight: "700",
 

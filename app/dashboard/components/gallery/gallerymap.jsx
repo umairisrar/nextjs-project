@@ -27,7 +27,7 @@ const Gallerymap = ({ image, name, deleteProject, id, settab, setprojectid }) =>
       style={{
         border: "1px solid #E4E4E4",
         borderRadius: "10px",
-        width: "240px",
+        width: "210px",
 
         padding: "0px 14px",
         paddingTop: "17px",
@@ -53,7 +53,7 @@ const Gallerymap = ({ image, name, deleteProject, id, settab, setprojectid }) =>
           //   className={styles.projecttext2}
           style={{
             color: color2,
-            fontSize: 20,
+            fontSize: 18,
             fontFamily: "sans-serif",
             fontWeight: "700",
 

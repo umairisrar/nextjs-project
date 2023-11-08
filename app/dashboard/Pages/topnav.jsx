@@ -60,7 +60,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
           zIndex: 10,
         }}
       >
-        <Typography style={{ fontFamily: "sans-serif", fontSize: "33px", cursor: "default" }}>
+        <Typography style={{ fontFamily: "sans-serif", fontSize: "26px", cursor: "default" }}>
           {title}
         </Typography>
         {title2 && (
@@ -79,7 +79,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
             style={{
               background: "rgb(2, 135, 230)",
               color: "white",
-              fontSize: "16px",
+              fontSize: "14px",
               borderRadius: "6px",
             }}
           >
