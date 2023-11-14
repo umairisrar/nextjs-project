@@ -60,7 +60,13 @@ const Topnav = ({ title, title2, settab, getData }) => {
           zIndex: 10,
         }}
       >
-        <Typography style={{ fontFamily: "sans-serif", fontSize: "26px", cursor: "default" }}>
+        <Typography
+          style={{
+            fontFamily: "sans-serif",
+            fontSize: "26px",
+            cursor: "default",
+          }}
+        >
           {title}
         </Typography>
         {title2 && (
@@ -110,7 +116,10 @@ const Topnav = ({ title, title2, settab, getData }) => {
               }}
             >
               <Box style={{ display: "flex", justifyContent: "flex-end" }}>
-                <Close onClick={() => setopen(false)} style={{ cursor: "pointer" }} />
+                <Close
+                  onClick={() => setopen(false)}
+                  style={{ cursor: "pointer" }}
+                />
               </Box>
               <Box
                 style={{
@@ -151,7 +160,9 @@ const Topnav = ({ title, title2, settab, getData }) => {
                   }}
                 >
                   {loading ? (
-                    <CircularProgress style={{ width: "30px", height: "30px", color: "white" }} />
+                    <CircularProgress
+                      style={{ width: "30px", height: "30px", color: "white" }}
+                    />
                   ) : (
                     "Submit"
                   )}
@@ -162,7 +173,11 @@ const Topnav = ({ title, title2, settab, getData }) => {
         ) : open === "partner" ? (
           <Addpartner setopen={setopen} getPartnerData={getData} />
         ) : open === "gallery" ? (
-          <Addgalleryimage setopen={setopen} getGalleryData={getData} />
+          <Addgalleryimage
+            setopen={setopen}
+            getGalleryData={getData}
+            settab={settab}
+          />
         ) : open === "project" ? (
           <Addproject setopen={setopen} getProjectData={getData} />
         ) : null}

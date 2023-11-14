@@ -13,7 +13,7 @@ export const GET = async (request) => {
 
     return new Response(JSON.stringify(Data), { status: 200 });
   } catch (error) {
-    return new Response("Internal Server Error", { status: 400 });
+    return new Response("Internal Server Error", { status: 404 });
   }
 };
 

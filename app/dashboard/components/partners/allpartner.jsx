@@ -1,10 +1,23 @@
 "use client";
-import { Box, CircularProgress, Container, IconButton, Tooltip, Typography } from "@mui/material";
+import {
+  Box,
+  CircularProgress,
+  Container,
+  IconButton,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Close, Delete } from "@mui/icons-material";
 
-const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, setloading }) => {
+const AllPartner = ({
+  getPartnerData,
+  partnersData,
+  setpartnersData,
+  loading,
+  setloading,
+}) => {
   const deletePartner = async (id) => {
     // setloading(true);
 
@@ -110,13 +123,13 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
                   style={{
                     width: "230px",
                     border: "1px solid #E4E4E4",
-                 display: 'flex',
-                 justifyContent: 'center',
-                 alignItems: 'center',
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                     borderRadius: "12px",
-                    
+
                     position: "relative",
-                    height: '131px'
+                    height: "131px",
                   }}
                 >
                   <Box
@@ -141,7 +154,7 @@ const AllPartner = ({ getPartnerData, partnersData, setpartnersData, loading, se
                     alt="slider1"
                     width={100}
                     height={"100"}
-                    style={{ width: "134px", height:'auto' }}
+                    style={{ width: "134px", height: "auto" }}
                   />
                 </Box>
               )}

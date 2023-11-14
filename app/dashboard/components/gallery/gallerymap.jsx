@@ -5,7 +5,14 @@ import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Gallerymap = ({ image, name, deleteProject, id, settab, setprojectid }) => {
+const Gallerymap = ({
+  image,
+  name,
+  deleteProject,
+  id,
+  settab,
+  setprojectid,
+}) => {
   const [color1, setcolor1] = useState("black");
   const [color2, setcolor2] = useState("#0287E6");
 

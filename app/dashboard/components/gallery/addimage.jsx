@@ -1,6 +1,13 @@
 "use client";
 import React from "react";
-import { Box, Typography, Button, CircularProgress, IconButton, Tooltip } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  CircularProgress,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
 
 import styles from "../../dashboard.module.css";
 import { useState } from "react";
@@ -24,7 +31,10 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
 
   const createGallery = async (e) => {
     if (!values.name || values.image.length === 0) {
-      handleClickVariant("error", "Kindly complete all the required input fields.");
+      handleClickVariant(
+        "error",
+        "Kindly complete all the required input fields."
+      );
       return;
     }
     for (const image of values.image) {
@@ -69,6 +79,7 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
         handleClickVariant("success", "New Gallery created Successfully");
         getGalleryData();
         setopen(false);
+        settab("all");
       } else {
         handleClickVariant("error", "Something went wrong");
       }
@@ -213,7 +224,12 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
                     alt="icon"
                   />
                   <Box
-                    style={{ position: "absolute", top: "-5px", right: "-4px", color: "black" }}
+                    style={{
+                      position: "absolute",
+                      top: "-5px",
+                      right: "-4px",
+                      color: "black",
+                    }}
                     onClick={() => {
                       removeimage(id);
                     }}
@@ -245,7 +261,9 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
             }}
           >
             {loading ? (
-              <CircularProgress style={{ width: "30px", height: "30px", color: "white" }} />
+              <CircularProgress
+                style={{ width: "30px", height: "30px", color: "white" }}
+              />
             ) : (
               "Submit"
             )}

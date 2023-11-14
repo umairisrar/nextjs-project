@@ -5,7 +5,16 @@ import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Careermap = ({ name, email, phoneno, _id, position, address, resume, deleteCareer }) => {
+const Careermap = ({
+  name,
+  email,
+  phoneno,
+  _id,
+  position,
+  address,
+  resume,
+  deleteCareer,
+}) => {
   const [color1, setcolor1] = useState("black");
   const [color2, setcolor2] = useState("#0287E6");
 
@@ -23,7 +32,7 @@ const Careermap = ({ name, email, phoneno, _id, position, address, resume, delet
       style={{
         border: "1px solid #E4E4E4",
         borderRadius: "18px",
-        width: "320px",
+        width: "290px",
 
         padding: "0px 14px 15px",
         paddingTop: "17px",

@@ -1,5 +1,11 @@
 "use client";
-import { Box, CircularProgress, IconButton, Tooltip, Typography } from "@mui/material";
+import {
+  Box,
+  CircularProgress,
+  IconButton,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import styles from "../../dashboard.module.css";
 import Gallerymap from "./gallerymap";
@@ -7,7 +13,13 @@ import Image from "next/image";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid }) => {
+const ProjectImages = ({
+  loading,
+  setloading,
+  settab,
+  setprojectid,
+  projectid,
+}) => {
   let images = [];
   useEffect(() => {
     images = projectid.images;
@@ -52,11 +64,17 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
         <Box
           style={{
             background: "white",
-            padding: "24px 24px 24px 24px",
+            padding: "24px 0px 24px 24px",
             borderRadius: "10px",
           }}
         >
-          <Box style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+            }}
+          >
             <KeyboardBackspaceIcon
               style={{ cursor: "pointer" }}
               onClick={() => {
@@ -64,7 +82,13 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
                 setprojectid({});
               }}
             />
-            <Typography style={{ fontSize: "28px", fontFamily: "sans-serif", marginLeft: "11px" }}>
+            <Typography
+              style={{
+                fontSize: "28px",
+                fontFamily: "sans-serif",
+                marginLeft: "11px",
+              }}
+            >
               {projectid.name}
             </Typography>
           </Box>
@@ -74,7 +98,7 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
               flexDirection: "row",
               alignItems: "center",
               flexWrap: "wrap",
-              gap: "21px",
+              gap: "14px",
               marginTop: "15px",
             }}
           >
@@ -96,7 +120,9 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
                     cursor: "default",
                   }}
                 >
-                  <Box style={{ display: "flex", justifyContent: "flex-end" }}></Box>
+                  <Box
+                    style={{ display: "flex", justifyContent: "flex-end" }}
+                  ></Box>
                   <Box
                     style={{
                       display: "flex",
@@ -112,7 +138,7 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
                       width={200}
                       height={150}
                       style={{
-                        width: "200px",
+                        width: "218px",
                         height: "150px",
                         border: "1px solid #00000014",
                         borderRadius: "9px",
@@ -129,7 +155,11 @@ const ProjectImages = ({ loading, setloading, settab, setprojectid, projectid })
                       <IconButton>
                         <DeleteIcon
                           // className={styles.projecticon}
-                          style={{ color: "#0287e6", fontSize: "21px", cursor: "pointer" }}
+                          style={{
+                            color: "#0287e6",
+                            fontSize: "21px",
+                            cursor: "pointer",
+                          }}
                         />
                       </IconButton>
                     </Tooltip>

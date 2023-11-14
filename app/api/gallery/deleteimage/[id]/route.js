@@ -12,7 +12,7 @@ export const PATCH = async (request, { params }) => {
     await Gallery.updateOne({ _id: params.id }, { $pull: { images: name } });
     return new Response("Delete Successfully", { status: 200 });
   } catch (error) {
-    return new Response("Error deleting prompt", { status: 500 });
+    return new Response("Error deleting prompt", { status: 404 });
   }
 };
 

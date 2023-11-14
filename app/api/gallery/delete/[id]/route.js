@@ -12,7 +12,7 @@ export const DELETE = async (request, { params }) => {
 
     return new Response("Gallery deleted successfully", { status: 200 });
   } catch (error) {
-    return new Response("Error deleting prompt", { status: 500 });
+    return new Response("Error deleting prompt", { status: 404 });
   }
 };
 

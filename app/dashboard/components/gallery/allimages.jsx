@@ -52,7 +52,7 @@ const Allgalleryimages = ({
         <Box
           style={{
             background: "white",
-            padding: "24px 24px 24px 24px",
+            padding: "24px 0px 24px 24px",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "row",

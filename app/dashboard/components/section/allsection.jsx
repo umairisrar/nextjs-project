@@ -4,7 +4,13 @@ import React, { useEffect, useState } from "react";
 import styles from "../../dashboard.module.css";
 import Sectionmap from "./sectionmap";
 
-const Allsection = ({ getSectionData, sectionData, setsectionData, loading, setloading }) => {
+const Allsection = ({
+  getSectionData,
+  sectionData,
+  setsectionData,
+  loading,
+  setloading,
+}) => {
   const deleteProject = async (id) => {
     // setloading(true);
 
@@ -44,7 +50,7 @@ const Allsection = ({ getSectionData, sectionData, setsectionData, loading, setl
         <Box
           style={{
             background: "white",
-            padding: "24px 24px 24px 24px",
+            padding: "24px 0px 24px 24px",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "row",

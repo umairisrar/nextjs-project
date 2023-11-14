@@ -1,5 +1,6 @@
 import Career from "@/models/career";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const DELETE = async (request, { params }) => {
   forceRevalidate(request);
@@ -7,10 +8,10 @@ export const DELETE = async (request, { params }) => {
     await connectToDB();
 
     await Career.findByIdAndRemove(params.id);
-
+    console.log("Deleted " + params.id);
     return new Response("Gallery deleted successfully", { status: 200 });
   } catch (error) {
-    return new Response("Error deleting prompt", { status: 500 });
+    return new Response("Error deleting prompt", { status: 400 });
   }
 };
 

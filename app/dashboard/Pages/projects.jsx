@@ -14,22 +14,9 @@ const Projects = () => {
   const [tab, settab] = useState("all");
   const [projectdata, setprojectdata] = useState([]);
   const [loading, setloading] = useState(false);
-
   const getProjectData = async () => {
     setloading(true);
     try {
-      const dynamic = await fetch(
-        `/api/project/allrecords?timestamp=${Date.now()}`,
-        {
-          cache: "no-store",
-        }
-      );
-      const products = await dynamic.json();
-      console.log(
-        "🚀 ~ file: projects.jsx:28 ~ getProjectData ~ products:",
-        products
-      );
-
       const response = await axios.get(
         `/api/project/allrecords?timestamp=${Date.now()}`,
         {}
@@ -56,7 +43,7 @@ const Projects = () => {
         style={{
           margin: "24px",
           background: "white",
-          padding: "24px",
+          padding: "24px 0px 24px 24px",
           borderRadius: "10px",
         }}
       >

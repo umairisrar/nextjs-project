@@ -11,7 +11,6 @@ export const GET = async (request) => {
     await connectToDB();
 
     const project = await Project.find({});
-    console.log(project);
     if (!project) return new Response("project Not Found", { status: 500 });
     return new Response(JSON.stringify(project), {
       status: 200,

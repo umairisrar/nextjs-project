@@ -9,11 +9,11 @@ export const GET = async (request, { params }) => {
     await connectToDB();
 
     const Data = await Gallery.find({ _id: params.id });
-    if (!Data) return new Response("Data Not Found", { status: 404 });
+    if (!Data) return new Response("Data Not Found", { status: 500 });
 
     return new Response(JSON.stringify(Data), { status: 200 });
   } catch (error) {
-    return new Response("Error ", { status: 500 });
+    return new Response("Error ", { status: 404 });
   }
 };
 
