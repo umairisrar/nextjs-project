@@ -56,10 +56,4 @@ const createImage = async (img, buffers) => {
   }
 };
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 export const revalidate = 0;
