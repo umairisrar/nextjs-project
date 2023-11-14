@@ -2,8 +2,11 @@ import fs from "fs/promises";
 import path from "path";
 import { connectToDB } from "@/utils/database";
 import Gallery from "@/models/gallery";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const POST = async (request) => {
+  forceRevalidate(request);
+
   const formData = await request.formData();
   const name = formData.get("name");
 
@@ -32,9 +35,15 @@ export const POST = async (request) => {
     });
     await newGallery.save();
 
-    return new Response(JSON.stringify({ submit: "submitted" }), { status: 201 });
+    return new Response(JSON.stringify({ submit: "submitted" }), {
+      status: 201,
+    });
   } catch (error) {
     console.error(error);
-    return new Response(JSON.stringify({ status: "invalid submission" }), { status: 500 });
+    return new Response(JSON.stringify({ status: "invalid submission" }), {
+      status: 500,
+    });
   }
 };
+
+export const revalidate = 0;

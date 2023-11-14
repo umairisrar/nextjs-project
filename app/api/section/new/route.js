@@ -1,7 +1,10 @@
 import Section from "@/models/section";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const POST = async (request) => {
+  forceRevalidate(request);
+
   const section = await request.json();
   try {
     await connectToDB();
@@ -13,3 +16,5 @@ export const POST = async (request) => {
     return new Response("Failed to create a new section", { status: 500 });
   }
 };
+
+export const revalidate = 0;

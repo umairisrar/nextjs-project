@@ -1,9 +1,12 @@
 import Career from "@/models/career";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 import fs from "fs";
 import path from "path";
 
 export const POST = async (request, res) => {
+  forceRevalidate(request);
+
   const formData0 = await request.formData();
   const name = formData0.get("name");
   const address = formData0.get("address");
@@ -28,10 +31,16 @@ export const POST = async (request, res) => {
       resume: `/files/${uniqueFilename}`,
     });
     await newCareer.save();
-    return new Response(JSON.stringify({ submit: "submitted" }), { status: 201 });
+    return new Response(JSON.stringify({ submit: "submitted" }), {
+      status: 201,
+    });
     return;
   } catch (e) {
-    return new Response(JSON.stringify({ status: "invalid submission" }), { status: 500 });
+    return new Response(JSON.stringify({ status: "invalid submission" }), {
+      status: 500,
+    });
     return;
   }
 };
+
+export const revalidate = 0;

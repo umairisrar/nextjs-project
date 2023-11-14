@@ -1,7 +1,9 @@
 import Career from "@/models/career";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const GET = async (request) => {
+  forceRevalidate(request);
   try {
     await connectToDB();
 
@@ -13,3 +15,5 @@ export const GET = async (request) => {
     return new Response("Internal Server Error", { status: 500 });
   }
 };
+
+export const revalidate = 0;
