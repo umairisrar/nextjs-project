@@ -2,7 +2,6 @@ import Project from "@/models/project";
 import { connectToDB } from "@/utils/database";
 
 export const GET = async (request) => {
-  console.log("hello1");
   try {
     await connectToDB();
 

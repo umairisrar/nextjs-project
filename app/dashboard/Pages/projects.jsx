@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useSnackbar } from "notistack";
 import Addproject from "../components/project/addproject";
 import Allproject from "../components/project/allproject";
+import axios from "axios";
 
 const Projects = () => {
   const [tab, settab] = useState("all");
@@ -17,13 +18,9 @@ const Projects = () => {
   const getProjectData = async () => {
     setloading(true);
     try {
-      const response = await fetch("/api/project/allrecords", {
-        method: "GET",
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
+      const response = await axios.get(`/api/project/allrecords?${Date.now()}`);
+      if (response) {
+        const data = await response.data;
         setprojectdata(data);
       }
     } catch (error) {
@@ -34,8 +31,20 @@ const Projects = () => {
   };
   return (
     <Box>
-      <Topnav title="Projects" title2="Add Project" settab={settab} getData={getProjectData} />
-      <Box style={{ margin: "24px", background: "white", padding: "24px", borderRadius: "10px" }}>
+      <Topnav
+        title="Projects"
+        title2="Add Project"
+        settab={settab}
+        getData={getProjectData}
+      />
+      <Box
+        style={{
+          margin: "24px",
+          background: "white",
+          padding: "24px",
+          borderRadius: "10px",
+        }}
+      >
         {/* <Box style={{ display: "flex", flexDirection: "row", gap: "17px", marginBottom: "12px" }}>
           <Typography
             onClick={() => {
