@@ -18,7 +18,22 @@ const Projects = () => {
   const getProjectData = async () => {
     setloading(true);
     try {
-      const response = await axios.get(`/api/project/allrecords?${Date.now()}`);
+      const dynamic = await fetch(
+        `/api/project/allrecords?timestamp=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      );
+      const products = await dynamic.json();
+      console.log(
+        "🚀 ~ file: projects.jsx:28 ~ getProjectData ~ products:",
+        products
+      );
+
+      const response = await axios.get(
+        `/api/project/allrecords?timestamp=${Date.now()}`,
+        {}
+      );
       if (response) {
         const data = await response.data;
         setprojectdata(data);
