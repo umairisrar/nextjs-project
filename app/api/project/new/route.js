@@ -1,7 +1,10 @@
 import Project from "@/models/project";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const POST = async (request) => {
+  forceRevalidate(request);
+
   const values = await request.json();
   const { name, date, section } = values;
   try {
@@ -14,3 +17,5 @@ export const POST = async (request) => {
     return new Response("Failed to create a new prompt", { status: 400 });
   }
 };
+
+export const revalidate = 0;

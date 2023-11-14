@@ -1,7 +1,10 @@
 import Project from "@/models/project";
 import { connectToDB } from "@/utils/database";
+import { forceRevalidate } from "@/utils/removeCache";
 
 export const DELETE = async (request, { params }) => {
+  forceRevalidate(request);
+
   try {
     await connectToDB();
 
@@ -13,3 +16,5 @@ export const DELETE = async (request, { params }) => {
     return new Response("Error deleting prompt", { status: 500 });
   }
 };
+
+export const revalidate = 0;
