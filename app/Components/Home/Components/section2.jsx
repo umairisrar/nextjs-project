@@ -6,7 +6,7 @@ import styles from "../../../page.module.css";
 
 const Section2 = () => {
   return (
-    <Box style = {{position: 'relative', zIndex: 1000}}>
+    <Box style={{ position: "relative", zIndex: 1000 }}>
       <Container>
         <Box
           style={{
@@ -34,7 +34,13 @@ const Section2 = () => {
               Welcome to Albwardy Engineering Enterprises
             </Typography>
           </Box>
-          <Box style={{ marginBottom: "46px", display: "flex", justifyContent: "center" }}>
+          <Box
+            style={{
+              marginBottom: "46px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Typography
               className={styles.section2text1}
               style={{
@@ -48,16 +54,17 @@ const Section2 = () => {
                 width: "92%",
               }}
             >
-              Albwardy Engineering Enterprises is a subsidiary of Albwardy Investments, established
-              in 1977 by Mr. Ali Saeed Juma Albwardy, to capitalise on the evergrowing demands of
-              engineering & construction works. Albwardy Engineering is managed by a team of
-              professionals in different disciplines and have the distinction of completing various
-              prestigious projects.
+              Albwardy Engineering Enterprises is a subsidiary of Albwardy
+              Investments, established in 1977 by Mr. Ali Saeed Juma Albwardy,
+              to capitalise on the evergrowing demands of engineering &
+              construction works. Albwardy Engineering is managed by a team of
+              professionals in different disciplines and have the distinction of
+              completing various prestigious projects.
             </Typography>
           </Box>
           <Box>
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/images/logoimage.png"
               alt="Vercel Logo"
               width={309}
               height={82}

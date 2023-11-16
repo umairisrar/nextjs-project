@@ -134,7 +134,7 @@ const Homesection3 = () => {
                     // style={{ background: "rgba(255, 255, 255, 0.12)", borderRadius: "360px" }}
                   >
                     <Image
-                      src="/assets/images/vector.svg"
+                      src="/assets/images/Vectorsvg.svg"
                       alt="Vercel Logo"
                       width={100}
                       height={21}
@@ -164,7 +164,7 @@ const Homesection3 = () => {
                     // style={{ background: "rgba(255, 255, 255, 0.12)", borderRadius: "360px" }}
                   >
                     <Image
-                      src="/assets/images/vector2.svg"
+                      src="/assets/images/Vector2svg.svg"
                       alt="Vercel Logo"
                       width={100}
                       height={21}

@@ -45,15 +45,16 @@ const Homesection4 = () => {
   return (
     <Box>
       <Box style={{ display: "flex" }} className={styles.chooseus}>
-        <Box className={styles.chooseus0}>
-          <Image
-            src="/assets/images/arch.png"
-            alt="Vercel Logo"
-            width={"100"}
-            height={"100"}
-            style={{ width: "100%", height: "100%" }}
-          />
+        <Box sx={{ width: "50%" }} className={styles.chooseus0}>
+          <Box style={{ position: "relative", width: "100%", height: "100%" }}>
+            <Image
+              src="/assets/images/arch1.png"
+              alt="Vercel Logo"
+              layout="fill"
+            />
+          </Box>
         </Box>
+
         <Box className={styles.chooseus0}>
           <Box className={styles.chooseus1}>
             <Typography

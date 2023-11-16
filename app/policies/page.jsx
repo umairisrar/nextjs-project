@@ -58,7 +58,13 @@ const Message = () => {
             >
               Policies and Accreditations
             </Typography>
-            <Box style={{ justifyContent: "center", display: "flex", width: "100%" }}>
+            <Box
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+              }}
+            >
               <Box
                 style={{
                   background: "white",
@@ -117,7 +123,8 @@ const Message = () => {
                         borderRadius: "8px",
                         marginBottom: "11px",
                         padding: "16px 26px",
-                        border: i === 0 ? "1px solid #0287E6" : "1px solid #E4E4E4",
+                        border:
+                          i === 0 ? "1px solid #0287E6" : "1px solid #E4E4E4",
                         cursor: "pointer",
                         color: i === 0 ? "white" : "black",
                       }}
@@ -156,7 +163,13 @@ const Message = () => {
                     Certifications
                   </Typography>
 
-                  <Box style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <Box
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "10px",
+                    }}
+                  >
                     <Box
                       className={styles.certificatebox}
                       style={{
@@ -165,6 +178,10 @@ const Message = () => {
                         textAlign: "center",
                         padding: " 11px",
                         width: "81%",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => {
+                        setimagename("ISO1");
                       }}
                     >
                       <Typography
@@ -212,7 +229,11 @@ const Message = () => {
                         borderRadius: "8px",
                         textAlign: "center",
                         padding: " 11px",
+                        cursor: "pointer",
                         width: "81%",
+                      }}
+                      onClick={() => {
+                        setimagename("ISO2");
                       }}
                     >
                       <Typography
@@ -260,7 +281,11 @@ const Message = () => {
                         borderRadius: "8px",
                         textAlign: "center",
                         padding: " 11px",
+                        cursor: "pointer",
                         width: "81%",
+                      }}
+                      onClick={() => {
+                        setimagename("ISO3");
                       }}
                     >
                       <Typography
@@ -371,6 +396,30 @@ const Message = () => {
               <Image
                 className={styles.imageheight}
                 src="/assets/images/welfare.png"
+                alt="Vercel Logo"
+                width={521}
+                height={568}
+              />
+            ) : imagename === "ISO1" ? (
+              <Image
+                className={styles.imageheight}
+                src="/assets/images/ISO2.png"
+                alt="Vercel Logo"
+                width={521}
+                height={568}
+              />
+            ) : imagename === "ISO2" ? (
+              <Image
+                className={styles.imageheight}
+                src="/assets/images/ISO1.png"
+                alt="Vercel Logo"
+                width={521}
+                height={568}
+              />
+            ) : imagename === "ISO3" ? (
+              <Image
+                className={styles.imageheight}
+                src="/assets/images/ISO3.png"
                 alt="Vercel Logo"
                 width={521}
                 height={568}

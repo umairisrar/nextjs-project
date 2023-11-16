@@ -38,7 +38,7 @@ const Footer = () => {
         <Grid item xs={12} md={4}>
           <Box style={{ display: "flex", justifyContent: "center" }}>
             <Image
-              src="/assets/images/logo.png"
+              src="/assets/images/logoimage.png"
               alt="Vercel Logo"
               width={309}
               height={82}
@@ -63,7 +63,9 @@ const Footer = () => {
               Site Navigation
             </Typography>
             {sitenavigation.map((item) => (
-              <Box style={{ display: "flex", flexDirection: "row", gap: "2px" }}>
+              <Box
+                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+              >
                 <Typography
                   style={{
                     color: "black",
@@ -97,7 +99,9 @@ const Footer = () => {
               Projects
             </Typography>
             {Projects.map((item) => (
-              <Box style={{ display: "flex", flexDirection: "row", gap: "2px" }}>
+              <Box
+                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+              >
                 <Typography
                   style={{
                     color: "black",
@@ -132,7 +136,9 @@ const Footer = () => {
               What We Do
             </Typography>
             {wwd.map((item) => (
-              <Box style={{ display: "flex", flexDirection: "row", gap: "2px" }}>
+              <Box
+                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+              >
                 <Typography
                   style={{
                     color: "black",
@@ -199,7 +205,14 @@ const Footer = () => {
               >
                 +971-4-3238008
               </Typography>
-              <CallMadeIcon style={{ fontSize: "14px" ,  position: 'relative', top: '-10px', right: '4px'}} />
+              <CallMadeIcon
+                style={{
+                  fontSize: "14px",
+                  position: "relative",
+                  top: "-10px",
+                  right: "4px",
+                }}
+              />
             </Box>
             <Box style={{ display: "flex" }}>
               <Typography
@@ -213,7 +226,9 @@ const Footer = () => {
               >
                 Leave us a Message
               </Typography>
-              <CallMadeIcon style={{ fontSize: "14px", position: 'relative', top: '-10px',}} />
+              <CallMadeIcon
+                style={{ fontSize: "14px", position: "relative", top: "-10px" }}
+              />
             </Box>
           </Box>
         </Grid>

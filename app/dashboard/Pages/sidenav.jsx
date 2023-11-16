@@ -66,7 +66,7 @@ const Sidenav = ({ setswitchvalue, switchvalue }) => {
         alt="Logo"
         width={203}
         height={64}
-        style={{ padding: "20px 10px" }}
+        style={{ padding: "20px 10px", cursor: "pointer" }}
       />
       <Box style={{ display: "flex", flexDirection: "column" }}>
         {sidearray.map((item, i) => (
