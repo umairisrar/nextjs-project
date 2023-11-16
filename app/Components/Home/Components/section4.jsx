@@ -28,7 +28,8 @@ const Homesection4 = () => {
     },
     {
       title1: "Timely Delivery:",
-      title2: " We consistently meet project deadlines, ensuring your plans proceed smoothly. ",
+      title2:
+        " We consistently meet project deadlines, ensuring your plans proceed smoothly. ",
     },
     {
       title1: "Cost-Effective:",
@@ -48,7 +49,7 @@ const Homesection4 = () => {
           <Image
             src="/assets/images/arch.png"
             alt="Vercel Logo"
-            width={100}
+            width={"100"}
             height={"100"}
             style={{ width: "100%", height: "100%" }}
           />
@@ -78,11 +79,15 @@ const Homesection4 = () => {
                 fontFamily: "sans-serif",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
             </Typography>
 
-            <Box className={styles.boxstyle} style={{ borderTop: "1px solid #0000008f" }}>
+            <Box
+              className={styles.boxstyle}
+              style={{ borderTop: "1px solid #0000008f" }}
+            >
               <Image
                 src="/assets/images/star-04.svg"
                 alt="Vercel Logo"
@@ -100,8 +105,9 @@ const Homesection4 = () => {
                     fontFamily: "sans-serif",
                   }}
                 >
-                  <span style={{ fontWeight: "700" }}>Experience:</span> Operating since 1977, over
-                  45 years of excellence in the field.
+                  <span style={{ fontWeight: "700" }}>Experience:</span>{" "}
+                  Operating since 1977, over 45 years of excellence in the
+                  field.
                 </Typography>
               </Box>
             </Box>
@@ -126,7 +132,8 @@ const Homesection4 = () => {
                           fontFamily: "sans-serif",
                         }}
                       >
-                        <span style={{ fontWeight: "700" }}>{item.title1}</span> {item.title2}
+                        <span style={{ fontWeight: "700" }}>{item.title1}</span>{" "}
+                        {item.title2}
                       </Typography>
                     </Box>
                   </Box>

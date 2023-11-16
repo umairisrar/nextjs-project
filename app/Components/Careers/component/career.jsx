@@ -73,7 +73,6 @@ const CareerForm = ({ setcareer }) => {
         });
 
         handleClickVariant("success", "Resume submitted successfully");
-        setcareer(false);
       }
     } catch (error) {
       console.log(error);
