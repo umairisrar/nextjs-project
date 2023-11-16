@@ -2,50 +2,38 @@
 import { Box, CircularProgress, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import styles from "../../dashboard.module.css";
-import Careermap from "./careermap";
+import Feedbackmap from "./feedbackmap";
 
-const AllCareer = () => {
-  const [careerdata, setcareerdata] = useState([]);
-  const [loading, setloading] = useState(false);
-
-  const deleteCareer = async (id) => {
+const Allfeedback = ({
+  setopenfeedback,
+  getFeedbackData,
+  feedbackdata,
+  setfeedbackdata,
+  loading,
+  setloading,
+}) => {
+  const deletefeedback = async (id) => {
     // setloading(true);
 
     try {
-      let data = await careerdata?.filter((item, idx) => {
+      let data = await feedbackdata?.filter((item, idx) => {
         return item._id !== id;
       });
 
-      setcareerdata(data);
-      await fetch(`/api/career/delete/${id.toString()}`, {
+      setfeedbackdata(data);
+      await fetch(`/api/feedback/delete/${id.toString()}`, {
         method: "DELETE",
       });
-      console.log("Project deleted");
+      console.log("feedback deleted");
+      // getFeedbackData();
     } catch (error) {
       setloading(false);
       console.log(error);
     }
   };
-  const getCareerData = async () => {
-    setloading(true);
-    try {
-      const response = await fetch("/api/career/getrecords", {
-        method: "GET",
-      });
 
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        setcareerdata(data);
-      }
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setloading(false);
-    }
-  };
   useEffect(() => {
-    getCareerData();
+    getFeedbackData();
   }, []);
   return (
     <>
@@ -64,18 +52,26 @@ const AllCareer = () => {
         <Box
           style={{
             background: "white",
-            padding: "24px 24px 24px 24px",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "row",
+            paddingTop: "20px",
             alignItems: "center",
             flexWrap: "wrap",
-            gap: "20px",
+            gap: "11px",
           }}
         >
-          {careerdata.length > 0 ? (
-            careerdata.map((item, i) => (
-              <Careermap {...item} deleteCareer={deleteCareer} />
+          {feedbackdata.length > 0 ? (
+            feedbackdata.map((item, i) => (
+              <Feedbackmap
+                setopenfeedback={setopenfeedback}
+                name={item.name}
+                email={item.email}
+                message={item.message}
+                subject={item.subject}
+                deletefeedback={deletefeedback}
+                id={item._id}
+              />
             ))
           ) : (
             <Box>
@@ -83,15 +79,14 @@ const AllCareer = () => {
                 variant="h5"
                 style={{ textAlign: "center", marginTop: "20px" }}
               >
-                No Career Available
+                No Feedback Available
               </Typography>
             </Box>
           )}
-          {}
         </Box>
       )}
     </>
   );
 };
 
-export default AllCareer;
+export default Allfeedback;

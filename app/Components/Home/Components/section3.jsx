@@ -8,7 +8,12 @@ const Homesection3 = () => {
   return (
     <Box style={{ background: "#000000", fontFamily: "sans-serif" }}>
       <Container>
-        <Box style={{ border: "1px solid rgba(228, 228, 228, 0.12)", padding: "60px 0px" }}>
+        <Box
+          style={{
+            border: "1px solid rgba(228, 228, 228, 0.12)",
+            padding: "60px 0px",
+          }}
+        >
           <Box style={{ padding: "0px 5px" }}>
             <Typography
               className={styles.section3text2}
@@ -33,12 +38,21 @@ const Homesection3 = () => {
                 fontFamily: "sans-serif",
               }}
             >
-              A team of proactive thinkers, unified by a resolute commitment to serving
+              A team of proactive thinkers, unified by a resolute commitment to
+              serving
               <span style={{ color: "#0287E6" }}> our clients.</span>  
             </Typography>
           </Box>
           <Box style={{ marginTop: "20px" }}>
-            <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", width: '102%' }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap",
+                width: "101%",
+              }}
+              className={styles.section2Box}
+            >
               <Box
                 className={styles.dfwork}
                 style={{
@@ -111,7 +125,7 @@ const Homesection3 = () => {
                 style={{
                   border: "1px solid rgba(228, 228, 228, 0.12)",
                   color: "white",
-                  width: '285px'
+                  width: "285px",
                 }}
               >
                 <Box style={{ display: "flex", justifyContent: "center" }}>
@@ -130,7 +144,13 @@ const Homesection3 = () => {
                 <Typography>Interior Fitout Services</Typography>
               </Box>
             </Box>
-            <Box style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap",
+              }}
+            >
               <Box
                 className={styles.dfwork}
                 style={{

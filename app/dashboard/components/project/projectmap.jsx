@@ -23,7 +23,7 @@ const Projectmap = ({ date, name, deleteProject, id }) => {
       style={{
         border: "1px solid #E4E4E4",
         borderRadius: "10px",
-        width: "240px",
+        width: "21%",
 
         padding: "0px 14px",
         paddingTop: "17px",

@@ -10,6 +10,7 @@ const Project = () => {
   const [sectiondata, setsectiondata] = useState([]);
   const [selectvalue, setselectvalue] = useState("All");
   const [loading, setloading] = useState(false);
+  const [showData, setshowData] = useState(50);
 
   const getProjectData = async () => {
     setloading(true);
@@ -61,7 +62,13 @@ const Project = () => {
   return (
     <Container>
       {loading ? (
-        <Box style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <CircularProgress />
         </Box>
       ) : (
@@ -121,6 +128,7 @@ const Project = () => {
             }}
           >
             {projectdata
+              .slice(0, showData)
               .filter((item) => {
                 if (selectvalue === "All") {
                   return item;
@@ -132,32 +140,37 @@ const Project = () => {
                 <Projectmap name={item.name} date={item.date} id={item._id} />
               ))}
           </Box>
-          <Box
-            className={styles.projectbox2}
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              gap: "8px",
-              justifyContent: "center",
-              paddingTop: "46px",
-            }}
-          >
-            <CachedIcon />
-            <Typography
-              className={styles.projecttext3}
+          {projectdata.length >= 50 && (
+            <Box
+              onClick={() => {
+                setshowData(projectdata.length);
+              }}
+              className={styles.projectbox2}
               style={{
-                color: "black",
-                fontSize: 15,
-                fontFamily: "sans-serif",
-                fontWeight: "700",
-
-                wordWrap: "break-word",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                gap: "8px",
+                justifyContent: "center",
+                paddingTop: "46px",
+                cursor: "pointer",
               }}
             >
-              Continue Explore The Projects
-            </Typography>
-          </Box>
+              <CachedIcon />
+              <Typography
+                className={styles.projecttext3}
+                style={{
+                  color: "black",
+                  fontSize: 15,
+                  fontFamily: "sans-serif",
+                  fontWeight: "700",
+                  wordWrap: "break-word",
+                }}
+              >
+                Continue Explore The Projects
+              </Typography>
+            </Box>
+          )}
         </Box>
       )}
     </Container>

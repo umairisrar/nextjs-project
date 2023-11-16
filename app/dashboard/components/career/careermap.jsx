@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import styles from "../../dashboard.module.css";
-import { Box, IconButton, Tooltip, Typography } from "@mui/material";
+import { Box, Button, IconButton, Tooltip, Typography } from "@mui/material";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import DeleteIcon from "@mui/icons-material/Delete";
 
@@ -32,7 +32,7 @@ const Careermap = ({
       style={{
         border: "1px solid #E4E4E4",
         borderRadius: "18px",
-        width: "290px",
+        width: "22%",
 
         padding: "0px 14px 15px",
         paddingTop: "17px",
@@ -58,7 +58,7 @@ const Careermap = ({
           // className={styles.projecttext1}
           style={{
             color: color1,
-            fontSize: 18,
+            fontSize: 20,
             fontFamily: "sans-serif",
             fontWeight: "500",
 
@@ -83,7 +83,6 @@ const Careermap = ({
           color: color2,
           fontSize: 15,
           fontFamily: "sans-serif",
-          fontWeight: "700",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -97,7 +96,6 @@ const Careermap = ({
           color: color2,
           fontSize: 15,
           fontFamily: "sans-serif",
-          fontWeight: "700",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -111,7 +109,6 @@ const Careermap = ({
           color: color2,
           fontSize: 15,
           fontFamily: "sans-serif",
-          fontWeight: "700",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -125,7 +122,6 @@ const Careermap = ({
           color: color2,
           fontSize: 15,
           fontFamily: "sans-serif",
-          fontWeight: "700",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -134,14 +130,21 @@ const Careermap = ({
         {position}
       </Typography>
       <Box style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-        <Typography style={{ fontSize: "18px" }}>Resume</Typography>
-        <iframe
-          title="Resume"
-          src={resume}
-          width="100%"
-          height="300"
-          style={{ border: "none" }}
-        ></iframe>
+        <Button
+          variant="outlined"
+          style={{
+            fontSize: "16px",
+            color: color2,
+            borderColor: color2,
+            padding: "3px",
+            marginTop: "6px",
+          }}
+          onClick={() => {
+            window.open(resume, "_blank");
+          }}
+        >
+          Resume
+        </Button>
       </Box>
     </Box>
   );

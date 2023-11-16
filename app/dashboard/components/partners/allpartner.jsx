@@ -68,7 +68,7 @@ const AllPartner = ({
           }}
         >
           {partnersData.map((item) => (
-            <Box>
+            <Box style={{ width: "23%" }}>
               {item?.img1 ? (
                 <Box
                   //   className={styles.section5box}
@@ -121,7 +121,6 @@ const AllPartner = ({
                 <Box
                   //   className={styles.section5box}
                   style={{
-                    width: "230px",
                     border: "1px solid #E4E4E4",
                     display: "flex",
                     justifyContent: "center",

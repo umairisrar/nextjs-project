@@ -17,64 +17,77 @@ const Gallerymap = ({
   const [color2, setcolor2] = useState("#0287E6");
 
   return (
-    <Box
-      onClick={() => {
-        settab("project");
-        setprojectid({ images: image, name: name, id });
-      }}
-      onMouseEnter={() => {
-        setcolor1("white");
-        setcolor2("white");
-      }}
-      onMouseLeave={() => {
-        setcolor1("black");
-        setcolor2("#0287E6");
-      }}
-      className={styles.projects0}
-      style={{
-        border: "1px solid #E4E4E4",
-        borderRadius: "10px",
-        width: "210px",
+    <Box style={{ position: "relative", width: "21%" }}>
+      <Box
+        onClick={() => {
+          settab("project");
+          setprojectid({ images: image, name: name, id });
+        }}
+        onMouseEnter={() => {
+          setcolor1("white");
+          setcolor2("white");
+        }}
+        onMouseLeave={() => {
+          setcolor1("black");
+          setcolor2("#0287E6");
+        }}
+        className={styles.projects0}
+        style={{
+          border: "1px solid #E4E4E4",
+          borderRadius: "10px",
 
-        padding: "0px 14px",
-        paddingTop: "17px",
-        height: "70px",
-        display: "flex",
-        gap: "8px",
-        paddingTop: "17px",
-        transition: "1s",
-        flexDirection: "column",
-        cursor: "pointer",
-      }}
-    >
-      <Box style={{ display: "flex", justifyContent: "flex-end" }}></Box>
+          padding: "0px 14px",
+
+          height: "70px",
+          display: "flex",
+
+          transition: "1s",
+          flexDirection: "column",
+          cursor: "pointer",
+          justifyContent: "center",
+        }}
+      >
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Typography
+            //   className={styles.projecttext2}
+            style={{
+              color: color2,
+              fontSize: 16,
+              fontFamily: "sans-serif",
+              fontWeight: "700",
+
+              wordWrap: "break-word",
+              lineHeight: "20px",
+            }}
+          >
+            {name && name}
+          </Typography>
+        </Box>
+      </Box>
       <Box
         style={{
           display: "flex",
-          flexDirection: "row",
+          position: "absolute",
+          top: "0px",
+          right: "0px",
+          height: "100%",
           alignItems: "center",
-          justifyContent: "space-between",
         }}
       >
-        <Typography
-          //   className={styles.projecttext2}
-          style={{
-            color: color2,
-            fontSize: 18,
-            fontFamily: "sans-serif",
-            fontWeight: "700",
-
-            wordWrap: "break-word",
-            lineHeight: "20px",
-          }}
+        <Tooltip
+          title="Delete"
+          onClick={() => deleteProject(id)}
+          style={{ height: "40px" }}
         >
-          {name && name}
-        </Typography>
-        <Tooltip title="Delete">
           <IconButton>
             <DeleteIcon
-              // className={styles.projecticon}
-              onClick={() => deleteProject(id)}
               style={{ color: color2, fontSize: "21px", cursor: "pointer" }}
             />
           </IconButton>

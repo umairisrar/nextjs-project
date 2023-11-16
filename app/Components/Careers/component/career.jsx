@@ -13,7 +13,7 @@ const CareerForm = ({ setcareer }) => {
     name: "",
     email: "",
     phoneno: "",
-    position: "",
+    position: "Product Designer",
     address: "",
     resume: "",
   });
@@ -42,7 +42,10 @@ const CareerForm = ({ setcareer }) => {
       !values.position ||
       !values.address
     ) {
-      handleClickVariant("error", "Kindly complete all the required input fields.");
+      handleClickVariant(
+        "error",
+        "Kindly complete all the required input fields."
+      );
       return;
     }
     setloading(true);
@@ -68,7 +71,9 @@ const CareerForm = ({ setcareer }) => {
           address: "",
           resume: "",
         });
+
         handleClickVariant("success", "Resume submitted successfully");
+        setcareer(false);
       }
     } catch (error) {
       console.log(error);
@@ -271,7 +276,10 @@ const CareerForm = ({ setcareer }) => {
               </Box>
             </Box>
 
-            <Box className={styles.careerbox2} style={{ paddingBottom: "20px" }}>
+            <Box
+              className={styles.careerbox2}
+              style={{ paddingBottom: "20px" }}
+            >
               <Box
                 className={styles.careerbox4}
                 style={{
@@ -340,7 +348,9 @@ const CareerForm = ({ setcareer }) => {
                       justifyContent: "space-around",
                     }}
                   >
-                    <AttachFileIcon style={{ color: "#0287E6", transform: "rotate(45deg)" }} />
+                    <AttachFileIcon
+                      style={{ color: "#0287E6", transform: "rotate(45deg)" }}
+                    />
                     <input
                       id="partnerimage"
                       type="file"
@@ -412,7 +422,9 @@ const CareerForm = ({ setcareer }) => {
                 }}
               >
                 {loading ? (
-                  <CircularProgress style={{ color: "white", width: "32px", height: "32px" }} />
+                  <CircularProgress
+                    style={{ color: "white", width: "32px", height: "32px" }}
+                  />
                 ) : (
                   "Submit Application"
                 )}

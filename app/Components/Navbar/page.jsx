@@ -137,10 +137,18 @@ const Navbar = ({ title, setswitch }) => {
             </li>
             <li
               className={styles.navlist}
-              style={{ display: "flex", flexDirection: "column", position: "relative" }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "relative",
+              }}
             >
               <Box
-                style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
                 onClick={() => {
                   setcompany(!company);
                   setwwd(false);
@@ -209,11 +217,19 @@ const Navbar = ({ title, setswitch }) => {
             </li>{" "}
             <li
               className={styles.navlist}
-              style={{ display: "flex", flexDirection: "column", position: "relative" }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "relative",
+              }}
             >
               {/* <p>What We Do</p> <ExpandMoreIcon /> */}
               <Box
-                style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
                 onClick={() => {
                   setwwd(!wwd);
                   setprojects(false);
@@ -271,7 +287,9 @@ const Navbar = ({ title, setswitch }) => {
                       fontSize: "14px",
                     }}
                     onClick={() => {
-                      router.push(`/whatwedo?title=${item.title.replaceAll(" ", "_")}`);
+                      router.push(
+                        `/whatwedo?title=${item.title.replaceAll(" ", "_")}`
+                      );
 
                       if (setswitch) {
                         setswitch(item.title);
@@ -286,11 +304,19 @@ const Navbar = ({ title, setswitch }) => {
             </li>
             <li
               className={styles.navlist}
-              style={{ display: "flex", flexDirection: "column", position: "relative" }}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                position: "relative",
+              }}
             >
               {/* <p>Projects</p> <ExpandMoreIcon /> */}
               <Box
-                style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
                 onClick={() => {
                   setprojects(!projects);
                   setcompany(false);
@@ -439,14 +465,22 @@ const Navbar = ({ title, setswitch }) => {
                     }}
                   >
                     <Box
-                      style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
                       onClick={() => {
                         setcompany(!company);
                         setwwd(false);
                         setprojects(false);
                       }}
                     >
-                      <Typography style={{ color: title === "company" ? "#0287E6" : "white" }}>
+                      <Typography
+                        style={{
+                          color: title === "company" ? "#0287E6" : "white",
+                        }}
+                      >
                         Company
                       </Typography>{" "}
                       <ExpandMoreIcon />
@@ -521,14 +555,20 @@ const Navbar = ({ title, setswitch }) => {
                   >
                     {/* <p>What We Do</p> <ExpandMoreIcon /> */}
                     <Box
-                      style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
                       onClick={() => {
                         setwwd(!wwd);
                         setprojects(false);
                         setcompany(false);
                       }}
                     >
-                      <Typography style={{ color: title === "wwd" ? "#0287E6" : "white" }}>
+                      <Typography
+                        style={{ color: title === "wwd" ? "#0287E6" : "white" }}
+                      >
                         What We Do
                       </Typography>
                       <ExpandMoreIcon />
@@ -612,7 +652,11 @@ const Navbar = ({ title, setswitch }) => {
                         setwwd(false);
                       }}
                     >
-                      <Typography style={{ color: title === "projects" ? "#0287E6" : "white" }}>
+                      <Typography
+                        style={{
+                          color: title === "projects" ? "#0287E6" : "white",
+                        }}
+                      >
                         Projects
                       </Typography>
                       <ExpandMoreIcon />

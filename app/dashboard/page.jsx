@@ -11,6 +11,7 @@ import { SnackbarProvider } from "notistack";
 import Partners from "./Pages/partners";
 import Career from "./Pages/career";
 import Sections from "./Pages/section";
+import Feedback from "./Pages/feedback";
 
 const Dashoard = () => {
   const [switchvalue, setswitchvalue] = useState("PROJECTS");
@@ -35,6 +36,8 @@ const Dashoard = () => {
             <Career />
           ) : switchvalue === "SECTIONS" ? (
             <Sections />
+          ) : switchvalue === "FEEDBACKS" ? (
+            <Feedback />
           ) : null}
         </Box>
       </SnackbarProvider>

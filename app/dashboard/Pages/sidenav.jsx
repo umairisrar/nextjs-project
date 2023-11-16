@@ -10,6 +10,7 @@ import CollectionsIcon from "@mui/icons-material/Collections";
 import styles from "../dashboard.module.css";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import { useRouter } from "next/navigation";
+import MessageIcon from "@mui/icons-material/Message";
 
 const Sidenav = ({ setswitchvalue, switchvalue }) => {
   const sidearray = [
@@ -41,11 +42,22 @@ const Sidenav = ({ setswitchvalue, switchvalue }) => {
       title: "CAREERS",
       icon: <NewspaperIcon />,
     },
+    {
+      title: "FEEDBACKS",
+      icon: <MessageIcon />,
+    },
   ];
   const router = useRouter();
 
   return (
-    <Box style={{ background: "#323544", height: "100vh", width: "250px", position: "fixed" }}>
+    <Box
+      style={{
+        background: "#323544",
+        height: "100vh",
+        width: "250px",
+        position: "fixed",
+      }}
+    >
       <Image
         onClick={() => {
           router.push("/");
@@ -76,7 +88,9 @@ const Sidenav = ({ setswitchvalue, switchvalue }) => {
             className={styles.sidetabs}
           >
             {item.icon}
-            <Typography style={{ fontFamily: "sans-serif", fontSize: "16px" }}>{item.title}</Typography>
+            <Typography style={{ fontFamily: "sans-serif", fontSize: "16px" }}>
+              {item.title}
+            </Typography>
           </Box>
         ))}
       </Box>

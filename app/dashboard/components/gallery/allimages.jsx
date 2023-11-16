@@ -25,7 +25,6 @@ const Allgalleryimages = ({
       await fetch(`/api/gallery/delete/${id.toString()}`, {
         method: "DELETE",
       });
-      console.log("Project deleted");
     } catch (error) {
       setloading(false);
       console.log(error);
@@ -52,7 +51,7 @@ const Allgalleryimages = ({
         <Box
           style={{
             background: "white",
-            padding: "24px 0px 24px 24px",
+            padding: "24px 24px 24px 24px",
             borderRadius: "10px",
             display: "flex",
             flexDirection: "row",

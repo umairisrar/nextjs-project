@@ -59,12 +59,10 @@ const createImage = async (img, buffers) => {
 
     const uploadedImageResponse = await cloudinary.uploader.upload(
       base64Image.content,
-      {
-        folder: "resume",
-        resource_type: "raw",
-      }
+      { resource_type: "raw" }
     );
-    return uploadedImageResponse.url;
+    console.log(uploadedImageResponse);
+    return uploadedImageResponse.secure_url;
   } catch (error) {
     console.log("🚀 ~ file: route.js:69 ~ createImage ~ error:", error);
   }

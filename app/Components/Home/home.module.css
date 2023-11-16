@@ -49,6 +49,9 @@
 }
 
 @media (max-width: 900px) {
+  .section2Box {
+    width: 100% !important;
+  }
   .section3text2 {
     font-size: 30px !important;
   }
