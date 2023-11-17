@@ -4,10 +4,13 @@ import Image from "next/image";
 import React from "react";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import styles from "../page.module.css";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Footer = () => {
   const sitenavigation = [
     "Home",
+
     "Company",
     "What We Do",
     "News Room",
@@ -33,7 +36,10 @@ const Footer = () => {
     "Solar Systems",
   ];
   return (
-    <Box className={styles.footer} style={{ padding: "60px 0px" }}>
+    <Box
+      className={styles.footer}
+      style={{ padding: "60px 0px", position: "relative" }}
+    >
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <Box style={{ display: "flex", justifyContent: "center" }}>
@@ -230,9 +236,72 @@ const Footer = () => {
                 style={{ fontSize: "14px", position: "relative", top: "-10px" }}
               />
             </Box>
+
+            <Box
+              className={styles.footerlogos}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                marginTop: "50px",
+                gap: "11px",
+              }}
+            >
+              <Box
+                style={{
+                  borderRadius: "5px",
+                  border: "1px solid #00000059",
+                  padding: "4px",
+                  paddingBottom: 0,
+                  cursor: "pointer",
+                }}
+              >
+                <InstagramIcon
+                  style={{ width: "26px", height: "26px", color: "#000000de" }}
+                />
+              </Box>
+              <Box
+                style={{
+                  borderRadius: "5px",
+                  border: "1px solid #00000059",
+                  padding: "4px",
+                  paddingBottom: 0,
+                  cursor: "pointer",
+                }}
+              >
+                <Image
+                  src="/assets/images/twitterlogo.png"
+                  alt="Vercel Logo"
+                  width={26}
+                  height={26}
+                  style={{ width: "26", height: "26", color: "#000000de" }}
+                />
+              </Box>
+              <Box
+                style={{
+                  borderRadius: "5px",
+                  border: "1px solid #00000059",
+                  padding: "3px 4px 0px",
+                  height: "32px",
+                  cursor: "pointer",
+                }}
+              >
+                <FacebookIcon
+                  style={{ width: "28px", height: "28px", color: "#000000de" }}
+                />
+              </Box>
+            </Box>
           </Box>
         </Grid>
       </Grid>
+      <Box
+        style={{ position: "absolute", bottom: 2, width: "100%" }}
+        className={styles.footercopyright}
+      >
+        <Typography style={{ fontFamily: "sans-serif" }}>
+          Copyright © 2023 Albwardy Engineering Enterprises Est.
+        </Typography>
+      </Box>
     </Box>
   );
 };

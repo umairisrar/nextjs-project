@@ -60,6 +60,20 @@
     padding: 10px 50px;
   }
 
+  .footercopyright p {
+    font-size: 11px;
+  }
+
+  .footercopyright {
+    text-align: center;
+    right: -2px;
+  }
+
+  .footerlogos {
+    margin-top: 17px !important;
+    margin-bottom: 22px;
+  }
+
   .footerimage {
     width: 240px !important;
     height: 71px !important;
