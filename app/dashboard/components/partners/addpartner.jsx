@@ -41,41 +41,45 @@ const Addpartner = ({ setopen, getPartnerData }) => {
         const img = new Image();
         img.src = e.target.result;
 
-        img.onload = () => {
+        img.onload = async () => {
           const width = img.width;
           const height = img.height;
 
-          // if (width <= 200 && height <= 200) {
-          // } else {
-          //   handleClickVariant(
-          //     "error",
-          //     "Please choose a valid image as the dimensions of the selected image exceed 200x200 pixels"
-          //   );
-          //   return;
-          // }
+          if (width <= 134) {
+            setloading(true);
+            const formData = new FormData();
+            formData.append("name", values.name);
+            formData.append("image", values.image);
+            try {
+              const response = await fetch("/api/partners/new", {
+                method: "POST",
+                body: formData,
+              });
+
+              if (response.ok) {
+                handleClickVariant(
+                  "success",
+                  "New Partner created Successfully"
+                );
+                getPartnerData();
+                setopen(false);
+              }
+            } catch (error) {
+              console.log(error);
+              handleClickVariant("error", "Something went wrong");
+            } finally {
+              setloading(false);
+            }
+          } else {
+            handleClickVariant(
+              "error",
+              "Please choose a valid image as the dimensions of the selected image exceed 134 pixels"
+            );
+            setloading(false);
+            return;
+          }
         };
       };
-    }
-    setloading(true);
-    const formData = new FormData();
-    formData.append("name", values.name);
-    formData.append("image", values.image);
-    try {
-      const response = await fetch("/api/partners/new", {
-        method: "POST",
-        body: formData,
-      });
-
-      if (response.ok) {
-        handleClickVariant("success", "New Partner created Successfully");
-        getPartnerData();
-        setopen(false);
-      }
-    } catch (error) {
-      console.log(error);
-      handleClickVariant("error", "Something went wrong");
-    } finally {
-      setloading(false);
     }
   };
 

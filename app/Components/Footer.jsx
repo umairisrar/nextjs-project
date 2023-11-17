@@ -38,7 +38,11 @@ const Footer = () => {
   return (
     <Box
       className={styles.footer}
-      style={{ padding: "60px 0px", position: "relative" }}
+      style={{
+        padding: "60px 0px",
+        position: "relative",
+        paddingRight: "50px",
+      }}
     >
       <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
@@ -298,7 +302,7 @@ const Footer = () => {
         style={{ position: "absolute", bottom: 2, width: "100%" }}
         className={styles.footercopyright}
       >
-        <Typography style={{ fontFamily: "sans-serif" }}>
+        <Typography style={{ fontFamily: "sans-serif", textAlign: "center" }}>
           Copyright © 2023 Albwardy Engineering Enterprises Est.
         </Typography>
       </Box>

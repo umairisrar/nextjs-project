@@ -153,7 +153,11 @@ const AllPartner = ({
                     alt="slider1"
                     width={100}
                     height={"100"}
-                    style={{ width: "134px", height: "auto" }}
+                    style={{
+                      width: "134px",
+                      height: "auto",
+                      maxHeight: "120px",
+                    }}
                   />
                 </Box>
               )}
