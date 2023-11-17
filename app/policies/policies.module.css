@@ -53,6 +53,6 @@
 @media (max-width: 500px) {
   .imageheight {
     width: 95% !important;
-    height: 100%;
+    height: 95%;
   }
 }

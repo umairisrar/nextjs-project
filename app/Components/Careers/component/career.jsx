@@ -112,7 +112,7 @@ const CareerForm = ({ setcareer }) => {
         justifyContent: "center",
         alignItems: "center",
         background: "#00000063",
-        zIndex: 10,
+        zIndex: 100,
       }}
     >
       <Box

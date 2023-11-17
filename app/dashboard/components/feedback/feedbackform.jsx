@@ -18,6 +18,7 @@ const Feedbackform = ({ openfeedback, setopenfeedback }) => {
         justifyContent: "center",
         alignItems: "center",
         zIndex: 9999,
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
       }}
     >
       <Box

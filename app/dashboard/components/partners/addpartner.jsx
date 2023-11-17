@@ -27,7 +27,10 @@ const Addpartner = ({ setopen, getPartnerData }) => {
 
   const createPartner = async (e) => {
     if (!values.name || !values.image) {
-      handleClickVariant("error", "Kindly complete all the required input fields.");
+      handleClickVariant(
+        "error",
+        "Kindly complete all the required input fields."
+      );
       return;
     }
     if (values.image) {
@@ -92,6 +95,7 @@ const Addpartner = ({ setopen, getPartnerData }) => {
         justifyContent: "center",
         alignItems: "center",
         zIndex: "10",
+        background: "#000000a1",
       }}
     >
       <Box
@@ -199,7 +203,9 @@ const Addpartner = ({ setopen, getPartnerData }) => {
             }}
           >
             {loading ? (
-              <CircularProgress style={{ width: "30px", height: "30px", color: "white" }} />
+              <CircularProgress
+                style={{ width: "30px", height: "30px", color: "white" }}
+              />
             ) : (
               "Submit"
             )}

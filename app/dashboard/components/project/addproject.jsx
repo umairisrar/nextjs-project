@@ -8,7 +8,11 @@ import { useSnackbar } from "notistack";
 import { Close } from "@mui/icons-material";
 
 const Addproject = ({ setopen, getProjectData }) => {
-  const [values, setvalues] = useState({ date: "", name: "", section: "Hospitality Sector" });
+  const [values, setvalues] = useState({
+    date: "",
+    name: "",
+    section: "Hospitality Sector",
+  });
   const [loading, setloading] = useState(false);
   const { enqueueSnackbar } = useSnackbar();
   const [sectiondata, setsectiondata] = useState([]);
@@ -50,7 +54,10 @@ const Addproject = ({ setopen, getProjectData }) => {
 
   const createProject = async (e) => {
     if (!values.date || !values.name) {
-      handleClickVariant("error", "Kindly complete all the required input fields.");
+      handleClickVariant(
+        "error",
+        "Kindly complete all the required input fields."
+      );
       return;
     }
     setloading(true);
@@ -87,6 +94,7 @@ const Addproject = ({ setopen, getProjectData }) => {
         justifyContent: "center",
         alignItems: "center",
         zIndex: "10",
+        background: "#000000a1",
       }}
     >
       <Box
@@ -190,7 +198,9 @@ const Addproject = ({ setopen, getProjectData }) => {
               }}
             >
               {loading ? (
-                <CircularProgress style={{ width: "30px", height: "30px", color: "white" }} />
+                <CircularProgress
+                  style={{ width: "30px", height: "30px", color: "white" }}
+                />
               ) : (
                 "Submit"
               )}

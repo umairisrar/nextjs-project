@@ -119,6 +119,7 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
         justifyContent: "center",
         alignItems: "center",
         zIndex: "10",
+        background: "#000000a1",
       }}
     >
       <Box

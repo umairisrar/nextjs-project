@@ -103,6 +103,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              background: "#000000a1",
             }}
           >
             <Box
@@ -157,6 +158,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
                     textTransform: "capitalize",
                     // width: "105%",
                     wordWrap: "break-word",
+                    width: "100%",
                   }}
                 >
                   {loading ? (

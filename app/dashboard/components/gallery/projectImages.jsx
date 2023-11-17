@@ -98,7 +98,7 @@ const ProjectImages = ({
               flexDirection: "row",
               alignItems: "center",
               flexWrap: "wrap",
-              gap: "14px",
+              gap: "8px",
               marginTop: "15px",
             }}
           >

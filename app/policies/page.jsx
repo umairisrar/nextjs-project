@@ -213,7 +213,7 @@ const Message = () => {
                             fontFamily: "sans-serif",
                             fontWeight: "700",
                             wordWrap: "break-word",
-                            width: "189px",
+                            width: "141px",
 
                             lineHeight: "25px",
                           }}

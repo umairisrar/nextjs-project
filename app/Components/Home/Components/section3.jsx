@@ -137,7 +137,7 @@ const Homesection3 = () => {
                       src="/assets/images/Vectorsvg.svg"
                       alt="Vercel Logo"
                       width={100}
-                      height={21}
+                      height={18}
                     />
                   </span>
                 </Box>

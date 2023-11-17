@@ -19,85 +19,94 @@ const Feedbackmap = ({
 
   return (
     <Box
-      onClick={() => {
-        setopenfeedback({
-          open: true,
-          name: name,
-          email: email,
-          message: message,
-          subject: subject,
-          id: id,
-        });
-      }}
-      onMouseEnter={() => {
-        setcolor1("white");
-        setcolor2("white");
-      }}
-      onMouseLeave={() => {
-        setcolor1("black");
-        setcolor2("#0287E6");
-      }}
-      className={styles.projects0}
       style={{
-        border: "1px solid #E4E4E4",
-        borderRadius: "10px",
         width: "21%",
-        padding: "0px 14px",
-        paddingTop: "17px",
         height: "98px",
-        display: "flex",
-        gap: "8px",
-        paddingTop: "17px",
-        cursor: "pointer",
-        transition: "1s",
-        flexDirection: "column",
+        position: "relative",
       }}
     >
-      <Box style={{ display: "flex", justifyContent: "flex-end" }}></Box>
       <Box
+        onMouseEnter={() => {
+          setcolor1("white");
+          setcolor2("white");
+        }}
+        onMouseLeave={() => {
+          setcolor1("black");
+          setcolor2("#0287E6");
+        }}
+        onClick={() => {
+          setopenfeedback({
+            open: true,
+            name: name,
+            email: email,
+            message: message,
+            subject: subject,
+            id: id,
+          });
+        }}
+        className={styles.projects0}
         style={{
+          border: "1px solid #E4E4E4",
+          borderRadius: "10px",
+          width: "100%",
+          padding: "0px 14px",
+          paddingTop: "17px",
+          height: "100%",
           display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-between",
+          gap: "8px",
+          paddingTop: "17px",
+          cursor: "pointer",
+          transition: "1s",
+          flexDirection: "column",
+          position: "relative",
         }}
       >
-        <Typography
-          // className={styles.projecttext1}
+        <Box style={{ display: "flex", justifyContent: "flex-end" }}></Box>
+        <Box
           style={{
-            color: color1,
-            fontSize: 19,
-            fontFamily: "sans-serif",
-            fontWeight: "500",
-
-            wordWrap: "break-word",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
-          {name}
+          <Typography
+            // className={styles.projecttext1}
+            style={{
+              color: color1,
+              fontSize: 19,
+              fontFamily: "sans-serif",
+              fontWeight: "500",
+
+              wordWrap: "break-word",
+            }}
+          >
+            {name}
+          </Typography>
+        </Box>
+        <Typography
+          //   className={styles.projecttext2}
+          style={{
+            color: color2,
+            fontSize: 15,
+            fontFamily: "sans-serif",
+
+            wordWrap: "break-word",
+            lineHeight: "20px",
+          }}
+        >
+          {email}
         </Typography>
+      </Box>
+      <Box style={{ position: "absolute", top: 18, right: -16 }}>
         <Tooltip title="Delete" onClick={() => deletefeedback(id)}>
           <IconButton>
             <DeleteIcon
-              // className={styles.projecticon}
-
               style={{ color: color2, fontSize: "20px", cursor: "pointer" }}
             />
           </IconButton>
         </Tooltip>
       </Box>
-      <Typography
-        //   className={styles.projecttext2}
-        style={{
-          color: color2,
-          fontSize: 15,
-          fontFamily: "sans-serif",
-
-          wordWrap: "break-word",
-          lineHeight: "20px",
-        }}
-      >
-        {email}
-      </Typography>
     </Box>
   );
 };

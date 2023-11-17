@@ -51,6 +51,7 @@ const Homesection4 = () => {
               src="/assets/images/arch1.png"
               alt="Vercel Logo"
               layout="fill"
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </Box>
         </Box>
