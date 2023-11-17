@@ -22,6 +22,11 @@ const Topnav = ({ title, title2, settab, getData }) => {
 
   const createSection = async (e) => {
     setloading(true);
+    if (!section || section.trim === "") {
+      handleClickVariant("error", "Section cannot be empty");
+      setloading(false);
+      return;
+    }
 
     try {
       const response = await fetch("/api/section/new", {
