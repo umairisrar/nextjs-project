@@ -9,6 +9,14 @@
   align-items: center;
 }
 
+.svgstylepath {
+  animation: drawPath 0s ease forwards;
+}
+
+.svgstylepath1 {
+  animation: drawPath 1s ease forwards;
+}
+
 .boxstyle {
   display: flex;
   flex-direction: row;
@@ -105,5 +113,11 @@
 @media (max-width: 850px) {
   .svgimage {
     display: none;
+  }
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
   }
 }
