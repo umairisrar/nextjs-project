@@ -19,21 +19,28 @@ const Feedbackmap = ({
 
   return (
     <Box
+      className={styles.projects0}
+      onMouseEnter={() => {
+        setcolor1("white");
+        setcolor2("white");
+      }}
+      onMouseLeave={() => {
+        setcolor1("black");
+        setcolor2("#0287E6");
+      }}
       style={{
         width: "21%",
         height: "98px",
         position: "relative",
+        padding: "0px 14px",
+        paddingTop: "17px",
+        border: "1px solid #E4E4E4",
+        borderRadius: "10px",
+        cursor: "pointer",
+        transition: "1s",
       }}
     >
       <Box
-        onMouseEnter={() => {
-          setcolor1("white");
-          setcolor2("white");
-        }}
-        onMouseLeave={() => {
-          setcolor1("black");
-          setcolor2("#0287E6");
-        }}
         onClick={() => {
           setopenfeedback({
             open: true,
@@ -44,19 +51,13 @@ const Feedbackmap = ({
             id: id,
           });
         }}
-        className={styles.projects0}
         style={{
-          border: "1px solid #E4E4E4",
-          borderRadius: "10px",
           width: "100%",
-          padding: "0px 14px",
-          paddingTop: "17px",
+
           height: "100%",
           display: "flex",
           gap: "8px",
-          paddingTop: "17px",
-          cursor: "pointer",
-          transition: "1s",
+
           flexDirection: "column",
           position: "relative",
         }}
@@ -98,7 +99,7 @@ const Feedbackmap = ({
           {email}
         </Typography>
       </Box>
-      <Box style={{ position: "absolute", top: 18, right: -16 }}>
+      <Box style={{ position: "absolute", top: 18, right: 2 }}>
         <Tooltip title="Delete" onClick={() => deletefeedback(id)}>
           <IconButton>
             <DeleteIcon
