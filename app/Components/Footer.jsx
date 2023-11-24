@@ -1,22 +1,47 @@
 "use client";
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import styles from "../page.module.css";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import Career from "./Careers/page";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+  const [career, setcareer] = useState(false);
   const sitenavigation = [
-    "Home",
+    {
+      title: "Home",
+      link: "/",
+    },
+    {
+      title: "Company",
+      link: "aboutus",
+    },
+    {
+      title: "What We Do",
+      link: "whatwedo?title=Civil_&_Building_Works",
+    },
+    {
+      title: "Policies & Accreditations",
+      link: "policies",
+    },
+    {
+      title: "Contact us",
+      link: "contactus",
+    },
+    {
+      title: "Projects",
+      link: "projects",
+    },
 
-    "Company",
-    "What We Do",
-    "News Room",
-    "Projects",
-    "Careers",
-    "Contact us",
+    {
+      title: "Careers",
+      link: "Careers",
+    },
   ];
   const Projects = [
     "Commercial Buildings",
@@ -26,14 +51,38 @@ const Footer = () => {
     "Photo Gallery",
   ];
   const wwd = [
-    "Civil & Building Works",
-    "Steel Structure Works",
-    "MEP Works",
-    "Interior Fitout Services",
-    "Commercial Refrigeration",
-    "Facility Management Services",
-    "ELV Services",
-    "Solar Systems",
+    {
+      title: "Civil & Building Works",
+      link: "civil",
+    },
+    {
+      title: "Steel Structure Works",
+      link: "steelwork",
+    },
+    {
+      title: "MEP Works",
+      link: "civil",
+    },
+    {
+      title: "Interior Fitout Services",
+      link: "civil",
+    },
+    {
+      title: "Commercial Refrigeration",
+      link: "civil",
+    },
+    {
+      title: "Facility Management Services",
+      link: "civil",
+    },
+    {
+      title: "ELV Services",
+      link: "civil",
+    },
+    {
+      title: "Solar Systems",
+      link: "civil",
+    },
   ];
   return (
     <Box
@@ -77,16 +126,24 @@ const Footer = () => {
                 style={{ display: "flex", flexDirection: "row", gap: "2px" }}
               >
                 <Typography
+                  onClick={() => {
+                    if (item.link === "Careers") {
+                      setcareer(true);
+                    } else {
+                      router.push(item.link);
+                    }
+                  }}
                   style={{
                     color: "black",
-                    fontSize: 15,
+                    cursor: "pointer",
+                    fontSize: 13,
                     fontWeight: "400",
                     padding: "4px 0px",
                     wordWrap: "break-word",
                     fontFamily: "sans-serif",
                   }}
                 >
-                  {item}
+                  {item.title}
                 </Typography>
                 <CallMadeIcon style={{ fontSize: "14px" }} />
               </Box>
@@ -115,7 +172,8 @@ const Footer = () => {
                 <Typography
                   style={{
                     color: "black",
-                    fontSize: 15,
+                    fontSize: 13,
+                    cursor: "pointer",
                     fontWeight: "400",
                     padding: "4px 0px",
                     fontFamily: "sans-serif",
@@ -150,16 +208,22 @@ const Footer = () => {
                 style={{ display: "flex", flexDirection: "row", gap: "2px" }}
               >
                 <Typography
+                  onClick={() => {
+                    router.push(
+                      `/whatwedo?title=${item.title.replaceAll(" ", "_")}`
+                    );
+                  }}
                   style={{
                     color: "black",
-                    fontSize: 15,
+                    cursor: "pointer",
+                    fontSize: 13,
                     fontWeight: "400",
                     fontFamily: "sans-serif",
                     padding: "4px 0px",
                     wordWrap: "break-word",
                   }}
                 >
-                  {item}
+                  {item.title}
                 </Typography>
                 <CallMadeIcon style={{ fontSize: "14px" }} />
               </Box>
@@ -194,7 +258,7 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "#0287E6",
-                  fontSize: 14,
+                  fontSize: 13,
                   fontFamily: "sans-serif",
                   fontWeight: "400",
                   fontFamily: "sans-serif",
@@ -206,7 +270,7 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "black",
-                  fontSize: 14,
+                  fontSize: 13,
                   fontFamily: "sans-serif",
                   fontWeight: "400",
                   fontFamily: "sans-serif",
@@ -228,7 +292,7 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "#0287E6",
-                  fontSize: 14,
+                  fontSize: 13,
                   fontFamily: "sans-serif",
                   fontWeight: "400",
                   wordWrap: "break-word",
@@ -261,7 +325,7 @@ const Footer = () => {
                 }}
               >
                 <InstagramIcon
-                  style={{ width: "26px", height: "26px", color: "#000000de" }}
+                  style={{ width: "20px", height: "20px", color: "#000000de" }}
                 />
               </Box>
               <Box
@@ -276,22 +340,22 @@ const Footer = () => {
                 <Image
                   src="/assets/images/twitterlogo.png"
                   alt="Vercel Logo"
-                  width={26}
-                  height={26}
-                  style={{ width: "26", height: "26", color: "#000000de" }}
+                  width={20}
+                  height={20}
+                  style={{ width: "20", height: "20", color: "#000000de" }}
                 />
               </Box>
               <Box
                 style={{
                   borderRadius: "5px",
                   border: "1px solid #00000059",
-                  padding: "3px 4px 0px",
-                  height: "32px",
+                  padding: "5px 4px 0px",
+                  height: "25px",
                   cursor: "pointer",
                 }}
               >
                 <FacebookIcon
-                  style={{ width: "28px", height: "28px", color: "#000000de" }}
+                  style={{ width: "20px", height: "20px", color: "#000000de" }}
                 />
               </Box>
             </Box>
@@ -306,6 +370,11 @@ const Footer = () => {
           Copyright © 2023 Albwardy Engineering Enterprises Est.
         </Typography>
       </Box>
+      {career && (
+        <Box style={{}}>
+          <Career setcareer={setcareer} />
+        </Box>
+      )}
     </Box>
   );
 };
