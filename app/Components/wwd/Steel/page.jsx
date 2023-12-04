@@ -11,16 +11,17 @@ const Steel = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           textAlign: "justify",
           wordWrap: "break-word",
         }}
       >
-        Our expertise in steel structures is the foundation upon which great projects stand. We
-        design, fabricate, and construct steel structures that endure the test of time while being
-        equipped to deliver robust and visually striking steel solutions.
+        Our expertise in steel structures is the foundation upon which great
+        projects stand. We design, fabricate, and construct steel structures
+        that endure the test of time while being equipped to deliver robust and
+        visually striking steel solutions.
       </Typography>
 
       <Typography
@@ -28,7 +29,7 @@ const Steel = () => {
         style={{
           color: "black",
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "700",
           wordWrap: "break-word",
           paddingTop: "14px",
@@ -60,7 +61,7 @@ const Steel = () => {
             style={{
               color: "black",
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -83,7 +84,7 @@ const Steel = () => {
             style={{
               color: "black",
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -105,7 +106,7 @@ const Steel = () => {
             style={{
               color: "black",
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",

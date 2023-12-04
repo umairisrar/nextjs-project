@@ -20,17 +20,18 @@ const ELV = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
           paddingBottom: "14px",
         }}
       >
-        At the Albwardy Engineering Enterprises ELV department, we have a team of professionals with
-        multiple years of experience on various systems and technologies. Our ELV Team is equipped
-        with the latest technologies and regulations of Etisalat, DU, SIRA, and Abu Dhabi MCC along
-        with upholding international standards and requirements.
+        At the Albwardy Engineering Enterprises ELV department, we have a team
+        of professionals with multiple years of experience on various systems
+        and technologies. Our ELV Team is equipped with the latest technologies
+        and regulations of Etisalat, DU, SIRA, and Abu Dhabi MCC along with
+        upholding international standards and requirements.
       </Typography>
 
       <Typography
@@ -38,16 +39,16 @@ const ELV = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
         }}
       >
-        Our team of engineers can handle system design, installation, T&C and maintenance of
-        projects of any magnitude. Our strength is to deliver a seamless integration of ICT,
-        Security Systems, BMS and AV systems, providing our clients with reliable and cost-effective
-        solutions.
+        Our team of engineers can handle system design, installation, T&C and
+        maintenance of projects of any magnitude. Our strength is to deliver a
+        seamless integration of ICT, Security Systems, BMS and AV systems,
+        providing our clients with reliable and cost-effective solutions.
       </Typography>
 
       <Box style={{ marginTop: "20px" }}>
@@ -55,7 +56,7 @@ const ELV = () => {
           style={{
             color: "black",
             fontSize: 15,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
             wordWrap: "break-word",
             paddingTop: "14px",
@@ -93,7 +94,7 @@ const ELV = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",

@@ -64,7 +64,7 @@ const Homesection4 = () => {
                 fontSize: 30,
                 fontWeight: "700",
                 wordWrap: "break-word",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 paddingBottom: "12px",
               }}
             >
@@ -78,7 +78,7 @@ const Homesection4 = () => {
 
                 wordWrap: "break-word",
                 marginBottom: "24px",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
               }}
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -104,7 +104,7 @@ const Homesection4 = () => {
                     fontSize: 15,
                     fontWeight: "400",
                     wordWrap: "break-word",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                   }}
                 >
                   <span style={{ fontWeight: "700" }}>Experience:</span>{" "}
@@ -131,7 +131,7 @@ const Homesection4 = () => {
                           fontSize: 15,
                           fontWeight: "400",
                           wordWrap: "break-word",
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                         }}
                       >
                         <span style={{ fontWeight: "700" }}>{item.title1}</span>{" "}

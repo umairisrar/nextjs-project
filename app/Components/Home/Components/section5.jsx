@@ -86,7 +86,7 @@ const Homesection5 = () => {
               fontWeight: "700",
 
               wordWrap: "break-word",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
             }}
           >
             Our Valuable Partners
@@ -99,12 +99,13 @@ const Homesection5 = () => {
                 fontSize: 15,
                 fontWeight: "400",
                 wordWrap: "break-word",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 width: "71%",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s,
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
             </Typography>
           </Box>
         </Box>

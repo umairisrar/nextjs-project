@@ -59,7 +59,7 @@ const Careermap = ({
           style={{
             color: color1,
             fontSize: 20,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "500",
 
             wordWrap: "break-word",
@@ -82,7 +82,7 @@ const Careermap = ({
         style={{
           color: color2,
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -95,7 +95,7 @@ const Careermap = ({
         style={{
           color: color2,
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -108,7 +108,7 @@ const Careermap = ({
         style={{
           color: color2,
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
 
           wordWrap: "break-word",
           lineHeight: "18px",
@@ -121,7 +121,7 @@ const Careermap = ({
         style={{
           color: color2,
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
 
           wordWrap: "break-word",
           lineHeight: "18px",

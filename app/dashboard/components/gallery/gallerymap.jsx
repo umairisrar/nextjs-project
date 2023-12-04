@@ -60,7 +60,7 @@ const Gallerymap = ({
             style={{
               color: color2,
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "700",
 
               wordWrap: "break-word",

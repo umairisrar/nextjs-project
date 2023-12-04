@@ -169,7 +169,7 @@ const LoginUser = ({ setlogin }) => {
               color: "white",
               fontSize: 16,
               marginBottom: "16px",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               textTransform: "capitalize",
               // width: "105%",
               wordWrap: "break-word",

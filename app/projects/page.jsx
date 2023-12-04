@@ -42,7 +42,7 @@ const Projects = () => {
               style={{
                 color: "white",
                 fontSize: 28,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -50,14 +50,20 @@ const Projects = () => {
             >
               Projects
             </Typography>
-            <Box style={{ justifyContent: "center", display: "flex", width: "100%" }}>
+            <Box
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+              }}
+            >
               <Box style={{}}>
                 <Typography
                   className={styles.projecttext2}
                   style={{
                     color: "white",
                     fontSize: 16,
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontWeight: "500",
                     textAlign: "center",
                     wordWrap: "break-word",

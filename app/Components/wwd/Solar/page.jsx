@@ -14,15 +14,15 @@ const Solar = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
           paddingBottom: "14px",
         }}
       >
-        While we may be relatively new to the solar industry, our commitment to excellence and
-        sustainability remains unwavering.
+        While we may be relatively new to the solar industry, our commitment to
+        excellence and sustainability remains unwavering.
       </Typography>
 
       <Typography
@@ -30,22 +30,23 @@ const Solar = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
           paddingBottom: "14px",
         }}
       >
-        With our expertise in engineering and the several other sectors of work, we've embarked on a
-        mission to provide services in this demanding field and bring in our continued work ethic.
+        With our expertise in engineering and the several other sectors of work,
+        we've embarked on a mission to provide services in this demanding field
+        and bring in our continued work ethic.
       </Typography>
 
       <Typography
         style={{
           color: "black",
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "700",
           wordWrap: "break-word",
           paddingTop: "14px",
@@ -60,15 +61,16 @@ const Solar = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
         }}
       >
-        Our team of skilled engineers and technicians bring a wealth of experience to the table. We
-        apply the same meticulous attention to detail and quality that defines our other services to
-        every solar project we undertake, some of which including but not limited to:
+        Our team of skilled engineers and technicians bring a wealth of
+        experience to the table. We apply the same meticulous attention to
+        detail and quality that defines our other services to every solar
+        project we undertake, some of which including but not limited to:
       </Typography>
 
       <Box style={{ marginTop: "20px" }}>
@@ -103,7 +105,7 @@ const Solar = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",

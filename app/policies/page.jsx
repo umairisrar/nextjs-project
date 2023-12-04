@@ -50,7 +50,7 @@ const Message = () => {
               style={{
                 color: "white",
                 fontSize: 26,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -88,7 +88,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 20,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "700",
                       marginBottom: "8px",
                       wordWrap: "break-word",
@@ -134,7 +134,7 @@ const Message = () => {
                         style={{
                           //   color: i === 0 ? "white" : "black",
                           fontSize: 18,
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                           fontWeight: "700",
                           wordWrap: "break-word",
                         }}
@@ -153,7 +153,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 20,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "700",
 
                       wordWrap: "break-word",
@@ -190,7 +190,7 @@ const Message = () => {
                           color: "white",
                           fontSize: 20,
                           paddingBottom: "6px",
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                           fontWeight: "700",
                           wordWrap: "break-word",
                         }}
@@ -210,7 +210,7 @@ const Message = () => {
                           style={{
                             color: "white",
                             fontSize: 16,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                             width: "141px",
@@ -242,7 +242,7 @@ const Message = () => {
                           color: "white",
                           fontSize: 20,
                           paddingBottom: "6px",
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                           fontWeight: "700",
                           wordWrap: "break-word",
                         }}
@@ -262,7 +262,7 @@ const Message = () => {
                           style={{
                             color: "white",
                             fontSize: 16,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                             width: "189px",
@@ -293,7 +293,7 @@ const Message = () => {
                         style={{
                           color: "white",
                           fontSize: 20,
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                           paddingBottom: "6px",
                           fontWeight: "700",
                           wordWrap: "break-word",
@@ -314,7 +314,7 @@ const Message = () => {
                           style={{
                             color: "white",
                             fontSize: 16,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                             width: "189px",

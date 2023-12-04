@@ -48,7 +48,7 @@ const Message = () => {
               style={{
                 color: "white",
                 fontSize: 26,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -56,7 +56,13 @@ const Message = () => {
             >
               Vision & Mission Statements
             </Typography>
-            <Box style={{ justifyContent: "center", display: "flex", width: "100%" }}>
+            <Box
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+              }}
+            >
               <Box
                 style={{
                   background: "white",
@@ -81,7 +87,7 @@ const Message = () => {
                       style={{
                         color: "black",
                         fontSize: 25,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "700",
                         paddingBottom: "5px",
                         wordWrap: "break-word",
@@ -94,15 +100,16 @@ const Message = () => {
                       style={{
                         color: "black",
                         fontSize: 15,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "500",
 
                         wordWrap: "break-word",
                       }}
                     >
-                      Our Mission is to lead the construction & services industry by offering
-                      clients the highest level of internal expertise and a fully integrated suite
-                      of services with a precise and dedicated approach to the business. 
+                      Our Mission is to lead the construction & services
+                      industry by offering clients the highest level of internal
+                      expertise and a fully integrated suite of services with a
+                      precise and dedicated approach to the business. 
                     </Typography>
 
                     <Box>
@@ -111,7 +118,7 @@ const Message = () => {
                         style={{
                           color: "black",
                           fontSize: 14,
-                          fontFamily: "sans-serif",
+                          fontFamily: "__Manrope_36d688",
                           fontWeight: "700",
                           wordWrap: "break-word",
                           padding: "10px 0px",
@@ -142,7 +149,7 @@ const Message = () => {
                             style={{
                               color: "black",
                               fontSize: 15,
-                              fontFamily: "sans-serif",
+                              fontFamily: "__Manrope_36d688",
                               fontWeight: "500",
 
                               wordWrap: "break-word",
@@ -163,7 +170,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 25,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "700",
 
                       wordWrap: "break-word",
@@ -177,15 +184,17 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 15,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "500",
 
                       wordWrap: "break-word",
                     }}
                   >
-                    Our vision is to achieve global recognition as an engineering firm that reflects
-                    the image of United Arab Emirates, by providing renowned working methodologies,
-                    technological skills,and multi skill human resource capabilities. 
+                    Our vision is to achieve global recognition as an
+                    engineering firm that reflects the image of United Arab
+                    Emirates, by providing renowned working methodologies,
+                    technological skills,and multi skill human resource
+                    capabilities. 
                   </Typography>
                 </Box>
               </Grid>

@@ -140,7 +140,7 @@ const CareerForm = ({ setcareer }) => {
             style={{
               color: "black",
               fontSize: 20,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "700",
               wordWrap: "break-word",
             }}
@@ -363,7 +363,7 @@ const CareerForm = ({ setcareer }) => {
                       style={{
                         color: "#0287E6",
                         fontSize: 13,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "600",
                         wordWrap: "break-word",
                         cursor: "pointer",
@@ -377,7 +377,7 @@ const CareerForm = ({ setcareer }) => {
                       style={{
                         color: "#667085",
                         fontSize: 14,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "500",
 
                         wordWrap: "break-word",
@@ -390,7 +390,7 @@ const CareerForm = ({ setcareer }) => {
                       style={{
                         color: "#667085",
                         fontSize: 14,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "500",
 
                         wordWrap: "break-word",
@@ -413,7 +413,7 @@ const CareerForm = ({ setcareer }) => {
                   borderRadius: "8px",
                   color: "white",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "700",
                   wordWrap: "break-word",
                   padding: "5px 27px",

@@ -88,7 +88,9 @@ const Sidenav = ({ setswitchvalue, switchvalue }) => {
             className={styles.sidetabs}
           >
             {item.icon}
-            <Typography style={{ fontFamily: "sans-serif", fontSize: "16px" }}>
+            <Typography
+              style={{ fontFamily: "__Manrope_36d688", fontSize: "16px" }}
+            >
               {item.title}
             </Typography>
           </Box>

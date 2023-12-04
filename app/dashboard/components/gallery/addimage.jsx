@@ -183,7 +183,7 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
             htmlFor="partnerimage"
             style={{
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               textTransform: "capitalize",
               wordWrap: "break-word",
               border: "1px solid black",
@@ -254,7 +254,7 @@ const Addgalleryimage = ({ setopen, getGalleryData }) => {
               background: "#0287E6",
               color: "white",
               fontSize: 16,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               textTransform: "capitalize",
               // width: "105%",
               wordWrap: "break-word",

@@ -1,7 +1,9 @@
-import "./globals.css";
 import { Manrope } from "next/font/google";
+import "./globals.css"; // Import your global CSS file
 
-const manrope = Manrope({ subsets: ["latin"] });
+const manrope = Manrope({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,6 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Include the font stylesheet */}
+        {/* <link rel="stylesheet" href={manrope.toStylesheet().href} /> */}
+      </head>
       <body className={manrope.className}>{children}</body>
     </html>
   );

@@ -42,12 +42,12 @@ export default function Home() {
               fontWeight: "700",
               // lineHeight: 64,
               wordWrap: "break-word",
-              fontFamily: "sans-serif",
+              // fontFamily: "__Manrope_36d688",
               lineHeight: "45px",
             }}
           >
-            Engineering resilience through complex planning, diligent ingenious execution and
-            sustainable development.
+            Engineering resilience through complex planning, diligent ingenious
+            execution and sustainable development.
           </Typography>
           <Box
             className={styles.animationbox}
@@ -60,7 +60,10 @@ export default function Home() {
             }}
           >
             {" "}
-            <ArrowRightAltIcon className={styles.animatedicon0} style={{ color: "#0287E6" }} />
+            <ArrowRightAltIcon
+              className={styles.animatedicon0}
+              style={{ color: "#0287E6" }}
+            />
             <Typography
               className={styles.animatedtext0}
               style={{
@@ -68,7 +71,7 @@ export default function Home() {
                 fontSize: 16,
 
                 fontWeight: "700",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
 
                 wordWrap: "break-word",
               }}

@@ -40,7 +40,7 @@ const Aboutus = () => {
               style={{
                 color: "white",
                 fontSize: 30,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -48,7 +48,13 @@ const Aboutus = () => {
             >
               About us
             </Typography>
-            <Box style={{ justifyContent: "center", display: "flex", width: "100%" }}>
+            <Box
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+              }}
+            >
               <Box
                 style={{
                   background: "white",
@@ -67,7 +73,7 @@ const Aboutus = () => {
             style={{
               color: "black",
               fontSize: 20,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "700",
               marginBottom: "10px",
               wordWrap: "break-word",
@@ -80,17 +86,19 @@ const Aboutus = () => {
             style={{
               color: "black",
               fontSize: 15,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
             }}
           >
-            Founded in 1977, Albwardy Engineering Enterprises stands as a prominent construction and
-            engineering firm, part of the <span style={{ color: "#0287E6" }}>Albwardy</span> group
-            of companies. Our dedication extends from meticulous pre-construction planning to
-            execution and comprehensive post-construction maintenance services, across a diverse
-            range of projects completed in the Middle East and Africa, primarily: 
+            Founded in 1977, Albwardy Engineering Enterprises stands as a
+            prominent construction and engineering firm, part of the{" "}
+            <span style={{ color: "#0287E6" }}>Albwardy</span> group of
+            companies. Our dedication extends from meticulous pre-construction
+            planning to execution and comprehensive post-construction
+            maintenance services, across a diverse range of projects completed
+            in the Middle East and Africa, primarily: 
           </Typography>
           <Box
             style={{
@@ -114,7 +122,7 @@ const Aboutus = () => {
                 style={{
                   color: "black",
                   fontSize: 17,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
 
                   wordWrap: "break-word",
@@ -137,7 +145,7 @@ const Aboutus = () => {
                 style={{
                   color: "black",
                   fontSize: 17,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
 
                   wordWrap: "break-word",
@@ -163,7 +171,7 @@ const Aboutus = () => {
                 style={{
                   color: "black",
                   fontSize: 17,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
 
                   wordWrap: "break-word",
@@ -186,7 +194,7 @@ const Aboutus = () => {
                 style={{
                   color: "black",
                   fontSize: 17,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
 
                   wordWrap: "break-word",
@@ -208,7 +216,7 @@ const Aboutus = () => {
                 style={{
                   color: "black",
                   fontSize: 17,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
 
                   wordWrap: "break-word",
@@ -223,36 +231,40 @@ const Aboutus = () => {
             style={{
               color: "black",
               fontSize: 15,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
               wordWrap: "break-word",
               paddingBottom: "16px",
             }}
           >
-            Albwardy Engineering Enterprises was founded by its owner, Mr. Ali Saeed Juma Albwardy
-            with a vision to support the nation's burgeoning economy and its holding company,
-            Albwardy Investment. Since inception, we have unwaveringly provided construction and
-            engineering services, consistently delivering impeccable quality work to both our group
-            companies and external clients.
+            Albwardy Engineering Enterprises was founded by its owner, Mr. Ali
+            Saeed Juma Albwardy with a vision to support the nation's burgeoning
+            economy and its holding company, Albwardy Investment. Since
+            inception, we have unwaveringly provided construction and
+            engineering services, consistently delivering impeccable quality
+            work to both our group companies and external clients.
           </Typography>
           <Typography
             className={styles.abouttext0}
             style={{
               color: "black",
               fontSize: 15,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
               wordWrap: "break-word",
             }}
           >
-            Our team comprises of highly skilled and experienced professionals with profound
-            expertise in Civil, Interior, MEP, ELV alongside with Solar systems. We steadfastly
-            pursue excellence, striving to attain customer satisfaction through the delivery of
-            premium-quality work within optimal timelines and cost parameters. A comprehensive
-            network of Facilities Services ensures efficient post-sale services, while our Interior
-            fit out and Furniture Manufacturing department guarantees unmatched quality and
-            craftsmanship. Our clients have consistently experienced satisfaction with our services,
-            thanks to our unwavering commitment to delivering premium workmanship efficiently.
+            Our team comprises of highly skilled and experienced professionals
+            with profound expertise in Civil, Interior, MEP, ELV alongside with
+            Solar systems. We steadfastly pursue excellence, striving to attain
+            customer satisfaction through the delivery of premium-quality work
+            within optimal timelines and cost parameters. A comprehensive
+            network of Facilities Services ensures efficient post-sale services,
+            while our Interior fit out and Furniture Manufacturing department
+            guarantees unmatched quality and craftsmanship. Our clients have
+            consistently experienced satisfaction with our services, thanks to
+            our unwavering commitment to delivering premium workmanship
+            efficiently.
           </Typography>
         </Container>
       </Box>

@@ -57,25 +57,26 @@ const MEP = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           textAlign: "justify",
           wordWrap: "break-word",
         }}
       >
-        The success of a superbly designed and constructed building deeply depends on the quality of
-        its Mechanical, Electrical and plumbing works. At Albwardy Engineering, we believe to be an
-        experienced leader in the market of MEP works for all types of projects including
-        commercial, residential, and industrial buildings. Our success and longevity in the industry
-        suffice for the quality that we provide.
+        The success of a superbly designed and constructed building deeply
+        depends on the quality of its Mechanical, Electrical and plumbing works.
+        At Albwardy Engineering, we believe to be an experienced leader in the
+        market of MEP works for all types of projects including commercial,
+        residential, and industrial buildings. Our success and longevity in the
+        industry suffice for the quality that we provide.
       </Typography>
 
       <Typography
         style={{
           color: "black",
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "700",
           wordWrap: "break-word",
           paddingTop: "14px",
@@ -109,7 +110,7 @@ const MEP = () => {
               style={{
                 color: "black",
                 fontSize: 16,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "500",
 
                 wordWrap: "break-word",
@@ -126,7 +127,7 @@ const MEP = () => {
           style={{
             color: "black",
             fontSize: 24,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
 
             wordWrap: "break-word",
@@ -164,7 +165,7 @@ const MEP = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",
@@ -183,7 +184,7 @@ const MEP = () => {
           style={{
             color: "black",
             fontSize: 25,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
 
             wordWrap: "break-word",
@@ -221,7 +222,7 @@ const MEP = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",
@@ -240,7 +241,7 @@ const MEP = () => {
           style={{
             color: "black",
             fontSize: 25,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
 
             wordWrap: "break-word",
@@ -278,7 +279,7 @@ const MEP = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",
@@ -297,7 +298,7 @@ const MEP = () => {
           style={{
             color: "black",
             fontSize: 25,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
 
             wordWrap: "break-word",
@@ -335,7 +336,7 @@ const MEP = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",

@@ -41,7 +41,7 @@ const Message = () => {
               style={{
                 color: "white",
                 fontSize: 26,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -103,7 +103,7 @@ const Message = () => {
                       style={{
                         color: "black",
                         fontSize: 18,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "700",
                         paddingTop: "10px",
                         wordWrap: "break-word",
@@ -115,7 +115,7 @@ const Message = () => {
                       style={{
                         color: "#667085",
                         fontSize: 14,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         fontWeight: "500",
 
                         wordWrap: "break-word",
@@ -133,7 +133,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 25,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "700",
                       paddingBottom: "5px",
                       wordWrap: "break-word",
@@ -146,7 +146,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 16,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "600",
 
                       wordWrap: "break-word",
@@ -163,7 +163,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 15,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "500",
 
                       wordWrap: "break-word",
@@ -185,7 +185,7 @@ const Message = () => {
                     style={{
                       color: "black",
                       fontSize: 15,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "500",
 
                       wordWrap: "break-word",

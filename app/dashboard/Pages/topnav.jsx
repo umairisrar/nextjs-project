@@ -67,7 +67,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
       >
         <Typography
           style={{
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontSize: "26px",
             cursor: "default",
           }}
@@ -159,7 +159,7 @@ const Topnav = ({ title, title2, settab, getData }) => {
                     background: "#0287E6",
                     color: "white",
                     fontSize: 16,
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     textTransform: "capitalize",
                     // width: "105%",
                     wordWrap: "break-word",

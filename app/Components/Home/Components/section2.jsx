@@ -26,7 +26,7 @@ const Section2 = () => {
 
                 fontWeight: "700",
                 //  lineHeight: 36,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
 
                 wordWrap: "break-word",
               }}
@@ -50,7 +50,7 @@ const Section2 = () => {
                 fontWeight: "400",
 
                 wordWrap: "break-word",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 width: "92%",
               }}
             >

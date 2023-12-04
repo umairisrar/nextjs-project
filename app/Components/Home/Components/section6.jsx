@@ -15,7 +15,7 @@ const Homesection6 = () => {
               fontSize: 30,
               fontWeight: "700",
               wordWrap: "break-word",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               textTransform: "uppercase",
               paddingBottom: "12px",
             }}
@@ -29,7 +29,7 @@ const Homesection6 = () => {
               fontSize: 18,
               fontWeight: "400",
               wordWrap: "break-word",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
             }}
           >
             Want to keep up to date with the latest news? Sign up below.
@@ -56,7 +56,7 @@ const Homesection6 = () => {
               outline: "none",
               border: "none",
               height: "27px",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               borderTopLeftRadius: "0px",
               borderBottomLeftRadius: "0px",
             }}
@@ -74,7 +74,7 @@ const Homesection6 = () => {
               borderBottomRightRadius: "0px",
 
               fontSize: 12,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "700",
 
               wordWrap: "break-word",

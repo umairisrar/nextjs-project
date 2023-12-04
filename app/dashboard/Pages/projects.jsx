@@ -53,7 +53,7 @@ const Projects = () => {
               settab("all");
             }}
             style={{
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontSize: "20px",
               cursor: "pointer",
               color: tab === "all" ? "#0287e6" : "black",
@@ -67,7 +67,7 @@ const Projects = () => {
               settab("add");
             }}
             style={{
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               cursor: "pointer",
               fontSize: "20px",
               color: tab === "add" ? "#0287e6" : "black",

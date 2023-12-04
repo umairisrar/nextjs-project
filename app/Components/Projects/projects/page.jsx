@@ -108,7 +108,7 @@ const Project = () => {
                   style={{
                     color: item === selectvalue ? "white" : "black",
                     fontSize: 14,
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontWeight: "500",
                     wordWrap: "break-word",
                   }}
@@ -162,7 +162,7 @@ const Project = () => {
                 style={{
                   color: "black",
                   fontSize: 15,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "700",
                   wordWrap: "break-word",
                 }}

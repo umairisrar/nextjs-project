@@ -123,7 +123,7 @@ const Navbar = ({ title, setswitch }) => {
               flexDirection: "row",
               alignItems: "center",
               gap: "22px",
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
             }}
           >
             <li
@@ -158,7 +158,7 @@ const Navbar = ({ title, setswitch }) => {
                 <Typography
                   style={{
                     color: title === "company" ? "#0287E6" : "white",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontSize: "14px",
                   }}
                 >
@@ -200,7 +200,7 @@ const Navbar = ({ title, setswitch }) => {
                   <Typography
                     style={{
                       color: "rgba(0, 0, 0, 0.88)",
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
@@ -239,7 +239,7 @@ const Navbar = ({ title, setswitch }) => {
                 <Typography
                   style={{
                     color: title === "wwd" ? "#0287E6" : "white",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontSize: "14px",
                   }}
                 >
@@ -281,7 +281,7 @@ const Navbar = ({ title, setswitch }) => {
                   <Typography
                     style={{
                       color: "rgba(0, 0, 0, 0.88)",
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
@@ -326,7 +326,7 @@ const Navbar = ({ title, setswitch }) => {
                 <Typography
                   style={{
                     color: title === "projects" ? "#0287E6" : "white",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontSize: "14px",
                   }}
                 >
@@ -368,7 +368,7 @@ const Navbar = ({ title, setswitch }) => {
                   <Typography
                     style={{
                       color: "rgba(0, 0, 0, 0.88)",
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
@@ -523,7 +523,7 @@ const Navbar = ({ title, setswitch }) => {
                         <Typography
                           style={{
                             color: "#000000e0",
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             padding: "8px 5px",
                             backgroundColor: "white",
                             zIndex: 3,
@@ -611,7 +611,7 @@ const Navbar = ({ title, setswitch }) => {
                         <Typography
                           style={{
                             color: "#000000e0",
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             padding: "8px 5px",
                             backgroundColor: "white",
                             zIndex: 3,
@@ -699,7 +699,7 @@ const Navbar = ({ title, setswitch }) => {
                         <Typography
                           style={{
                             color: "#000000e0",
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             padding: "8px 5px",
                             backgroundColor: "white",
                             zIndex: 3,

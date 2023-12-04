@@ -76,7 +76,7 @@ const Feedbackmap = ({
             style={{
               color: color1,
               fontSize: 19,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -90,7 +90,7 @@ const Feedbackmap = ({
           style={{
             color: color2,
             fontSize: 15,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
 
             wordWrap: "break-word",
             lineHeight: "20px",

@@ -115,7 +115,7 @@ const Footer = () => {
                 fontWeight: "700",
 
                 wordWrap: "break-word",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 marginBottom: "6px",
               }}
             >
@@ -140,7 +140,7 @@ const Footer = () => {
                     fontWeight: "400",
                     padding: "4px 0px",
                     wordWrap: "break-word",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                   }}
                 >
                   {item.title}
@@ -158,7 +158,7 @@ const Footer = () => {
                 fontSize: 18,
 
                 fontWeight: "700",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 wordWrap: "break-word",
                 marginBottom: "6px",
               }}
@@ -176,7 +176,7 @@ const Footer = () => {
                     cursor: "pointer",
                     fontWeight: "400",
                     padding: "4px 0px",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     wordWrap: "break-word",
                   }}
                 >
@@ -193,7 +193,7 @@ const Footer = () => {
               style={{
                 color: "black",
                 fontSize: 18,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
 
                 fontWeight: "700",
 
@@ -218,7 +218,7 @@ const Footer = () => {
                     cursor: "pointer",
                     fontSize: 13,
                     fontWeight: "400",
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     padding: "4px 0px",
                     wordWrap: "break-word",
                   }}
@@ -238,7 +238,7 @@ const Footer = () => {
                 fontSize: 18,
 
                 fontWeight: "700",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 wordWrap: "break-word",
                 marginBottom: "6px",
               }}
@@ -259,9 +259,9 @@ const Footer = () => {
                 style={{
                   color: "#0287E6",
                   fontSize: 13,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "400",
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   wordWrap: "break-word",
                 }}
               >
@@ -271,9 +271,9 @@ const Footer = () => {
                 style={{
                   color: "black",
                   fontSize: 13,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "400",
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   wordWrap: "break-word",
                 }}
               >
@@ -293,7 +293,7 @@ const Footer = () => {
                 style={{
                   color: "#0287E6",
                   fontSize: 13,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "400",
                   wordWrap: "break-word",
                 }}
@@ -366,7 +366,9 @@ const Footer = () => {
         style={{ position: "absolute", bottom: 2, width: "100%" }}
         className={styles.footercopyright}
       >
-        <Typography style={{ fontFamily: "sans-serif", textAlign: "center" }}>
+        <Typography
+          style={{ fontFamily: "__Manrope_36d688", textAlign: "center" }}
+        >
           Copyright © 2023 Albwardy Engineering Enterprises Est.
         </Typography>
       </Box>

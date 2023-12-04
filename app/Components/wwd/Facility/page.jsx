@@ -53,16 +53,18 @@ const Facility = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           wordWrap: "break-word",
         }}
       >
-        At Albwardy Engineering, we understand that the success of your business or institution
-        relies on the efficiency and reliability of your facilities. That is where our comprehensive
-        Facilities Management Services come into play. We are your trusted partner in ensuring the
-        smooth operation, maintenance, and optimization of your built environment.
+        At Albwardy Engineering, we understand that the success of your business
+        or institution relies on the efficiency and reliability of your
+        facilities. That is where our comprehensive Facilities Management
+        Services come into play. We are your trusted partner in ensuring the
+        smooth operation, maintenance, and optimization of your built
+        environment.
       </Typography>
 
       <Box style={{ marginTop: "20px" }}>
@@ -70,7 +72,7 @@ const Facility = () => {
           style={{
             color: "black",
             fontSize: 15,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
             wordWrap: "break-word",
             paddingTop: "14px",
@@ -109,7 +111,7 @@ const Facility = () => {
                 style={{
                   color: "black",
                   fontSize: 16,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "213px",
                   wordWrap: "break-word",
@@ -126,7 +128,7 @@ const Facility = () => {
             style={{
               color: "black",
               fontSize: 15,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "700",
               wordWrap: "break-word",
               paddingTop: "14px",
@@ -158,7 +160,7 @@ const Facility = () => {
                 style={{
                   color: "black",
                   fontSize: 15,
-                  fontFamily: "sans-serif",
+                  fontFamily: "__Manrope_36d688",
                   fontWeight: "500",
                   width: "93%",
                   wordWrap: "break-word",
@@ -169,7 +171,7 @@ const Facility = () => {
                   style={{
                     color: "black",
                     fontSize: 16,
-                    fontFamily: "sans-serif",
+                    fontFamily: "__Manrope_36d688",
                     fontWeight: "700",
 
                     wordWrap: "break-word",

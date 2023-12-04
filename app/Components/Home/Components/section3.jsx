@@ -6,7 +6,7 @@ import styles from "../home.module.css";
 
 const Homesection3 = () => {
   return (
-    <Box style={{ background: "#000000", fontFamily: "sans-serif" }}>
+    <Box style={{ background: "#000000", fontFamily: "__Manrope_36d688" }}>
       <Container>
         <Box
           style={{
@@ -24,6 +24,7 @@ const Homesection3 = () => {
                 fontWeight: "700",
 
                 wordWrap: "break-word",
+                fontFamily: "__Manrope_36d688",
               }}
             >
               What We Do?
@@ -35,7 +36,7 @@ const Homesection3 = () => {
                 fontSize: 14,
                 fontWeight: "600",
                 wordWrap: "break-word",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
               }}
             >
               A team of proactive thinkers, unified by a resolute commitment to
@@ -74,7 +75,9 @@ const Homesection3 = () => {
                   </span>
                 </Box>
 
-                <Typography>Civil & Building Works</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  Civil & Building Works
+                </Typography>
               </Box>
               <Box
                 className={styles.dfwork}
@@ -96,7 +99,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>MEP Works</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  MEP Works
+                </Typography>
               </Box>
               <Box
                 className={styles.dfwork}
@@ -118,7 +123,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>ELV Services</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  ELV Services
+                </Typography>
               </Box>
               <Box
                 className={styles.dfwork}
@@ -141,7 +148,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>Interior Fitout Services</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  Interior Fitout Services
+                </Typography>
               </Box>
             </Box>
             <Box
@@ -171,7 +180,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>Commercial Refrigeration</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  Commercial Refrigeration
+                </Typography>
               </Box>
               <Box
                 className={styles.dfwork}
@@ -193,7 +204,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>Solar Systems</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  Solar Systems
+                </Typography>
               </Box>
               <Box
                 className={styles.dfwork}
@@ -215,7 +228,9 @@ const Homesection3 = () => {
                     />
                   </span>
                 </Box>
-                <Typography>Facility Management Services</Typography>
+                <Typography style={{ fontFamily: "__Manrope_36d688" }}>
+                  Facility Management Services
+                </Typography>
               </Box>
             </Box>
           </Box>

@@ -50,7 +50,7 @@ const Sectionmap = ({ name, deleteProject, id, setsectionData }) => {
           style={{
             color: color2,
             fontSize: 15,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "700",
 
             wordWrap: "break-word",

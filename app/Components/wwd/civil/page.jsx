@@ -11,26 +11,28 @@ const Civil = () => {
         style={{
           color: "black",
           fontSize: 14,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "500",
           width: "93%",
           textAlign: "justify",
           wordWrap: "break-word",
         }}
       >
-        When it comes to civil works, Albwardy engineering excels in the vast variety of services we
-        provide. From effortless planning, adequate design and execution of commercial & retail
-        buildings, residential villas, hotels and high-end supermarkets. Civil works is a core
-        competence of Albwardy Engineering Enterprise. By consistently delivering building &
-        infrastructures at the highest engineering standards, we make sure to reflect the best image
-        of UAE and the company.
+        When it comes to civil works, Albwardy engineering excels in the vast
+        variety of services we provide. From effortless planning, adequate
+        design and execution of commercial & retail buildings, residential
+        villas, hotels and high-end supermarkets. Civil works is a core
+        competence of Albwardy Engineering Enterprise. By consistently
+        delivering building & infrastructures at the highest engineering
+        standards, we make sure to reflect the best image of UAE and the
+        company.
       </Typography>
 
       <Typography
         style={{
           color: "black",
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "700",
           wordWrap: "break-word",
           paddingTop: "14px",
@@ -54,7 +56,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -70,7 +72,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -85,7 +87,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -100,7 +102,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -115,7 +117,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
 
               wordWrap: "break-word",
@@ -130,7 +132,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
               width: "195px",
               wordWrap: "break-word",
@@ -145,7 +147,7 @@ const Civil = () => {
             style={{
               color: "black",
               fontSize: 17,
-              fontFamily: "sans-serif",
+              fontFamily: "__Manrope_36d688",
               fontWeight: "500",
               width: "195px",
               wordWrap: "break-word",

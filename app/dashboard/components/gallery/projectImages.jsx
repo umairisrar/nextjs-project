@@ -85,7 +85,7 @@ const ProjectImages = ({
             <Typography
               style={{
                 fontSize: "28px",
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 marginLeft: "11px",
               }}
             >

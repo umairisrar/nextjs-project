@@ -103,7 +103,7 @@ const ContactForm = () => {
               style={{
                 color: "white",
                 fontSize: 30,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -141,7 +141,7 @@ const ContactForm = () => {
                     style={{
                       color: "black",
                       fontSize: 33,
-                      fontFamily: "sans-serif",
+                      fontFamily: "__Manrope_36d688",
                       fontWeight: "700",
                       wordWrap: "break-word",
                       marginBottom: "42px",
@@ -172,7 +172,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 17,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                           }}
@@ -184,7 +184,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 15,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "500",
 
                             wordWrap: "break-word",
@@ -208,7 +208,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 15,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                           }}
@@ -220,7 +220,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 15,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "500",
 
                             wordWrap: "break-word",
@@ -244,7 +244,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 17,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "700",
                             wordWrap: "break-word",
                           }}
@@ -256,7 +256,7 @@ const ContactForm = () => {
                           style={{
                             color: "black",
                             fontSize: 16,
-                            fontFamily: "sans-serif",
+                            fontFamily: "__Manrope_36d688",
                             fontWeight: "500",
 
                             wordWrap: "break-word",
@@ -364,7 +364,7 @@ const ContactForm = () => {
                         background: "#0287E6",
                         color: "white",
                         fontSize: 16,
-                        fontFamily: "sans-serif",
+                        fontFamily: "__Manrope_36d688",
                         textTransform: "capitalize",
                         width: "105%",
                         wordWrap: "break-word",

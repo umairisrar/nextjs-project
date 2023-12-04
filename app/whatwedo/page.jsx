@@ -45,7 +45,9 @@ const wwd = () => {
   return (
     <Box>
       <Box
-        className={`${styles.background} ${animationActive ? styles.animate : ""}`}
+        className={`${styles.background} ${
+          animationActive ? styles.animate : ""
+        }`}
         style={{
           backgroundImage:
             switchvalue === "Steel Structure Works"
@@ -86,11 +88,13 @@ const wwd = () => {
             className={styles.boxstyle0}
           >
             <Typography
-              className={`${styles.text0} ${animationActive ? styles.textanimate : ""}`}
+              className={`${styles.text0} ${
+                animationActive ? styles.textanimate : ""
+              }`}
               style={{
                 color: "white",
                 fontSize: 26,
-                fontFamily: "sans-serif",
+                fontFamily: "__Manrope_36d688",
                 fontWeight: "700",
                 textAlign: "center",
                 wordWrap: "break-word",
@@ -114,7 +118,13 @@ const wwd = () => {
                 ? "Solar Systems"
                 : ""}
             </Typography>
-            <Box style={{ justifyContent: "center", display: "flex", width: "100%" }}>
+            <Box
+              style={{
+                justifyContent: "center",
+                display: "flex",
+                width: "100%",
+              }}
+            >
               <Box
                 style={{
                   background: "white",

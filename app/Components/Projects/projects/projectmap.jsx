@@ -47,7 +47,7 @@ const Projectmap = ({ name, date }) => {
           style={{
             color: color1,
             fontSize: 15,
-            fontFamily: "sans-serif",
+            fontFamily: "__Manrope_36d688",
             fontWeight: "500",
 
             wordWrap: "break-word",
@@ -55,14 +55,17 @@ const Projectmap = ({ name, date }) => {
         >
           {date.slice(0, 7)}
         </Typography>
-        <CallMadeIcon className={styles.projecticon} style={{ color: color2, fontSize: "18px" }} />
+        <CallMadeIcon
+          className={styles.projecticon}
+          style={{ color: color2, fontSize: "18px" }}
+        />
       </Box>
       <Typography
         className={styles.projecttext2}
         style={{
           color: color2,
           fontSize: 15,
-          fontFamily: "sans-serif",
+          fontFamily: "__Manrope_36d688",
           fontWeight: "700",
 
           wordWrap: "break-word",
