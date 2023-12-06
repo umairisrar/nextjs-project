@@ -47,7 +47,7 @@ const Section2 = () => {
                 color: "black",
                 fontSize: 19,
 
-                fontWeight: "400",
+                fontWeight: "500",
 
                 wordWrap: "break-word",
                 fontFamily: "__Manrope_36d688",

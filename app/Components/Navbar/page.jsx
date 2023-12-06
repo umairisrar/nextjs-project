@@ -204,6 +204,7 @@ const Navbar = ({ title, setswitch }) => {
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
+                      fontWeight: 600,
                     }}
                     onClick={() => {
                       router.push(item.link);
@@ -285,6 +286,7 @@ const Navbar = ({ title, setswitch }) => {
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
+                      fontWeight: 600,
                     }}
                     onClick={() => {
                       router.push(
@@ -372,6 +374,7 @@ const Navbar = ({ title, setswitch }) => {
                       padding: "8px 18px",
                       cursor: "pointer",
                       fontSize: "14px",
+                      fontWeight: 600,
                     }}
                     onClick={() => {
                       router.push("/projects");

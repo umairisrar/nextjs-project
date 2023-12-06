@@ -123,7 +123,12 @@ const Footer = () => {
             </Typography>
             {sitenavigation.map((item) => (
               <Box
-                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "4px",
+                  alignItems: "baseline",
+                }}
               >
                 <Typography
                   onClick={() => {
@@ -136,8 +141,8 @@ const Footer = () => {
                   style={{
                     color: "black",
                     cursor: "pointer",
-                    fontSize: 13,
-                    fontWeight: "400",
+                    fontSize: 14,
+                    fontWeight: "600",
                     padding: "4px 0px",
                     wordWrap: "break-word",
                     fontFamily: "__Manrope_36d688",
@@ -145,7 +150,7 @@ const Footer = () => {
                 >
                   {item.title}
                 </Typography>
-                <CallMadeIcon style={{ fontSize: "14px" }} />
+                <CallMadeIcon style={{ fontSize: "12px" }} />
               </Box>
             ))}
           </Box>
@@ -167,14 +172,19 @@ const Footer = () => {
             </Typography>
             {Projects.map((item) => (
               <Box
-                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "4px",
+                  alignItems: "baseline",
+                }}
               >
                 <Typography
                   style={{
                     color: "black",
-                    fontSize: 13,
+                    fontSize: 14,
+                    fontWeight: "600",
                     cursor: "pointer",
-                    fontWeight: "400",
                     padding: "4px 0px",
                     fontFamily: "__Manrope_36d688",
                     wordWrap: "break-word",
@@ -182,7 +192,7 @@ const Footer = () => {
                 >
                   {item}
                 </Typography>
-                <CallMadeIcon style={{ fontSize: "14px" }} />
+                <CallMadeIcon style={{ fontSize: "12px" }} />
               </Box>
             ))}
           </Box>
@@ -205,7 +215,12 @@ const Footer = () => {
             </Typography>
             {wwd.map((item) => (
               <Box
-                style={{ display: "flex", flexDirection: "row", gap: "2px" }}
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  gap: "4px",
+                  alignItems: "baseline",
+                }}
               >
                 <Typography
                   onClick={() => {
@@ -216,8 +231,8 @@ const Footer = () => {
                   style={{
                     color: "black",
                     cursor: "pointer",
-                    fontSize: 13,
-                    fontWeight: "400",
+                    fontSize: 14,
+                    fontWeight: "600",
                     fontFamily: "__Manrope_36d688",
                     padding: "4px 0px",
                     wordWrap: "break-word",
@@ -225,7 +240,7 @@ const Footer = () => {
                 >
                   {item.title}
                 </Typography>
-                <CallMadeIcon style={{ fontSize: "14px" }} />
+                <CallMadeIcon style={{ fontSize: "12px" }} />
               </Box>
             ))}
           </Box>
@@ -258,9 +273,9 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "#0287E6",
-                  fontSize: 13,
+                  fontSize: 14,
+                  fontWeight: "600",
                   fontFamily: "__Manrope_36d688",
-                  fontWeight: "400",
                   fontFamily: "__Manrope_36d688",
                   wordWrap: "break-word",
                 }}
@@ -270,9 +285,10 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "black",
-                  fontSize: 13,
+                  fontSize: 14,
+                  fontWeight: "600",
                   fontFamily: "__Manrope_36d688",
-                  fontWeight: "400",
+
                   fontFamily: "__Manrope_36d688",
                   wordWrap: "break-word",
                 }}
@@ -281,7 +297,7 @@ const Footer = () => {
               </Typography>
               <CallMadeIcon
                 style={{
-                  fontSize: "14px",
+                  fontSize: "12px",
                   position: "relative",
                   top: "-10px",
                   right: "4px",
@@ -292,16 +308,16 @@ const Footer = () => {
               <Typography
                 style={{
                   color: "#0287E6",
-                  fontSize: 13,
+                  fontSize: 14,
                   fontFamily: "__Manrope_36d688",
-                  fontWeight: "400",
+                  fontWeight: "600",
                   wordWrap: "break-word",
                 }}
               >
                 Leave us a Message
               </Typography>
               <CallMadeIcon
-                style={{ fontSize: "14px", position: "relative", top: "-10px" }}
+                style={{ fontSize: "12px", position: "relative", top: "-10px" }}
               />
             </Box>
 
@@ -367,7 +383,12 @@ const Footer = () => {
         className={styles.footercopyright}
       >
         <Typography
-          style={{ fontFamily: "__Manrope_36d688", textAlign: "center" }}
+          style={{
+            fontFamily: "__Manrope_36d688",
+            textAlign: "center",
+            fontSize: "14px",
+            paddingBottom: "5px",
+          }}
         >
           Copyright © 2023 Albwardy Engineering Enterprises Est.
         </Typography>

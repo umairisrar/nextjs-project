@@ -16,7 +16,6 @@ const Homesection6 = () => {
               fontWeight: "700",
               wordWrap: "break-word",
               fontFamily: "__Manrope_36d688",
-              textTransform: "uppercase",
               paddingBottom: "12px",
             }}
           >
@@ -48,7 +47,7 @@ const Homesection6 = () => {
           <input
             className={styles.section6input}
             type="text"
-            placeholder="Enter your Email"
+            placeholder="Enter your email"
             style={{
               background: "white",
               width: "453px",
@@ -57,8 +56,9 @@ const Homesection6 = () => {
               border: "none",
               height: "27px",
               fontFamily: "__Manrope_36d688",
-              borderTopLeftRadius: "0px",
-              borderBottomLeftRadius: "0px",
+              fontSize: "15px",
+              borderTopLeftRadius: "6px",
+              borderBottomLeftRadius: "6px",
             }}
           />
           <Button
@@ -68,16 +68,14 @@ const Homesection6 = () => {
               color: "white",
               height: "49px",
               borderTopLeftRadius: "0px",
-
               borderBottomLeftRadius: "0px",
-              borderTopRightRadius: "0px",
-              borderBottomRightRadius: "0px",
-
-              fontSize: 12,
+              borderTopRightRadius: "6px",
+              borderBottomRightRadius: "6px",
+              fontSize: 14,
               fontFamily: "__Manrope_36d688",
               fontWeight: "700",
-
               wordWrap: "break-word",
+              textTransform: "capitalize",
             }}
           >
             Stay in Touch

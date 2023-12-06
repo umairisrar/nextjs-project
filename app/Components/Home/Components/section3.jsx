@@ -33,15 +33,19 @@ const Homesection3 = () => {
               className={styles.section3text}
               style={{
                 color: "white",
-                fontSize: 14,
-                fontWeight: "600",
+                fontSize: 15,
+                fontWeight: "700",
                 wordWrap: "break-word",
                 fontFamily: "__Manrope_36d688",
               }}
             >
               A team of proactive thinkers, unified by a resolute commitment to
               serving
-              <span style={{ color: "#0287E6" }}> our clients.</span>  
+              <span style={{ color: "#0287E6", fontWeight: 800 }}>
+                {" "}
+                our clients.
+              </span>{" "}
+               
             </Typography>
           </Box>
           <Box style={{ marginTop: "20px" }}>

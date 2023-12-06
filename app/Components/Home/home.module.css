@@ -31,7 +31,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 130px;
+  height: 150px;
+  gap: 11;
 }
 
 .chooseus {
@@ -49,7 +50,7 @@
   padding: 60px 140px;
 }
 .section3text {
-  width: 347px;
+  width: 370px;
 }
 
 .svgimage {
